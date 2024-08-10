@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "**/.*"
+  ],
+  "words": [
+    "astro",
+    "astrojs",
+    "Attributify",
+    "chillcicada",
+    "crossorigin",
+    "fontmin",
+    "Googlebot",
+    "INFP",
+    "lightningcss",
+    "mingcute",
+    "neovim",
+    "netease",
+    "nogooglebot",
+    "nowrap",
+    "postbuild",
+    "Tsanger"
+  ],
+  "enableFiletypes": [
+    "astro"
+  ]
+}

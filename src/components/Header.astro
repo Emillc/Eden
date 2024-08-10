@@ -1,0 +1,25 @@
+---
+import config from '../config'
+
+const { logoText } = config.header
+---
+
+<header>
+  <nav class="mxa max-w-4xl flex items-center justify-between px-4 py-7">
+    <a href="/" class="whitespace-nowrap text-10">{logoText}</a>
+    <div class="social-links w-full flex justify-end gap-2">
+      <button type="button">
+        <div class="i-ri-sun-line dark:i-ri-moon-line"></div>
+      </button>
+      <button type="button">
+        <div class="i-mingcute-search-3-line"></div>
+      </button>
+      <a href="/rss.xml" target="_blank" aria-label="rss">
+        <div class="i-mingcute-rss-line"></div>
+      </a>
+    </div>
+  </nav>
+  <div class="mxa max-w-4xl px-4">
+    <hr aria-hidden="true" />
+  </div>
+</header>

@@ -1,0 +1,60 @@
+{
+  "name": "@emillc/eden",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "ChillCicada",
+    "url": "https://chillcicada.com",
+    "email": "2210227279@qq.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev --port=5555",
+    "build": "astro check && astro build",
+    "preview": "astro preview --port=4444",
+    "sync": "astro sync",
+    "astro": "astro",
+    "astro:up": "npx @astrojs/upgrade",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "fontmin": "node ./scripts/fontmin",
+    "postinstall": "simple-git-hooks",
+    "postbuild": "node ./scripts/postbuild && pnpm fontmin"
+  },
+  "dependencies": {
+    "@iconify-json/mingcute": "1.1.18",
+    "@iconify-json/ri": "1.1.21"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.24.0",
+    "@astrojs/check": "0.9.1",
+    "@astrojs/rss": "4.0.7",
+    "@astrojs/sitemap": "3.1.6",
+    "@astrojs/vue": "4.5.0",
+    "@types/html-minifier": "4.0.5",
+    "@types/node": "22.0.2",
+    "@unocss/eslint-plugin": "0.61.9",
+    "astro": "4.12.3",
+    "eslint": "9.8.0",
+    "eslint-plugin-astro": "1.2.3",
+    "eslint-plugin-format": "0.1.2",
+    "fontmin": "1.1.0",
+    "html-minifier": "4.0.0",
+    "lightningcss": "1.25.1",
+    "lint-staged": "15.2.7",
+    "simple-git-hooks": "2.11.1",
+    "terser": "5.31.3",
+    "typescript": "5.5.4",
+    "unocss": "0.61.9",
+    "vue": "3.4.37"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,astro}": [
+      "eslint --fix"
+    ]
+  }
+}

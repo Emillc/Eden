@@ -1,0 +1,32 @@
+---
+import config from '../config'
+
+const { author } = config
+const { socialLinks, license } = config.footer
+const year = new Date().getFullYear()
+---
+
+<footer class="flex-1">
+  <div class="mxa max-w-4xl flex flex-row flex-wrap justify-between gap-4 px-5 pt-10">
+    <div>
+      <p>&copy; {year} | {author}</p>
+    </div>
+    <nav class="social-links block">
+      <p class="mb-2"><strong>Social</strong></p>
+      <ul>
+        {
+          socialLinks.map(item => (
+            <li>
+              <a href={item.url} target="_blank">
+                <p>{item.name}</p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <a class="license" href={license.url} target="_blank">
+      <p>{license.text}</p>
+    </a>
+  </div>
+</footer>
