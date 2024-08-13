@@ -1,17 +1,16 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
-import { version } from '../../package.json'
-import '../styles/global.css'
+import { version } from '@@/package.json'
+import '@styles/global.css'
 
 interface Props {
   title: string
   description: string
+  canonicalURL?: string
   image?: string
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-
-const { title, description, image = '' } = Astro.props
+const { title, description, canonicalURL = new URL(Astro.url.pathname, Astro.site), image = '' } = Astro.props
 ---
 
 <!-- Global Metadata -->
@@ -44,3 +43,35 @@ const { title, description, image = '' } = Astro.props
 
 <!-- Transition -->
 <ViewTransitions />
+
+<script is:inline>
+function _isDark() {
+  const currentDark = localStorage.getItem('dark')
+  if (currentDark)
+    return currentDark === 'true'
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+}
+
+let isDark = _isDark()
+
+document.documentElement.classList.toggle('dark', isDark)
+
+function toggleTheme() {
+  isDark = !isDark
+  localStorage.setItem('dark', isDark.toString())
+  document.documentElement.classList.toggle('dark', isDark)
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  isDark = e.matches
+  localStorage.setItem('dark', isDark.toString())
+  document.documentElement.classList.toggle('dark', isDark)
+})
+
+window.addEventListener('load', () => {
+  document.querySelector('.theme-toggle')?.addEventListener('click', toggleTheme)
+})
+</script>
+
+<!-- Slot -->
+<slot />

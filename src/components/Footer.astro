@@ -1,19 +1,19 @@
 ---
-import config from '../config'
+import config from '@config'
 
 const { author } = config
 const { socialLinks, license } = config.footer
 const year = new Date().getFullYear()
 ---
 
-<footer class="flex-1">
+<footer class="text flex-1 transition-colors-300">
   <div class="mxa max-w-4xl flex flex-row flex-wrap justify-between gap-4 px-5 pt-10">
     <div>
       <p>&copy; {year} | {author}</p>
     </div>
     <nav class="social-links block">
       <p class="mb-2"><strong>Social</strong></p>
-      <ul>
+      <ul class="subtext0 transition-colors-300">
         {
           socialLinks.map(item => (
             <li>
@@ -30,3 +30,9 @@ const year = new Date().getFullYear()
     </a>
   </div>
 </footer>
+
+<style>
+  footer {
+    background-color: var(--mantle);
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-import config from '../config'
+import config from '@config'
 
 const { logoText } = config.header
 ---
@@ -8,12 +8,12 @@ const { logoText } = config.header
   <nav class="mxa max-w-4xl flex items-center justify-between px-4 py-7">
     <a href="/" class="whitespace-nowrap text-10">{logoText}</a>
     <div class="social-links w-full flex justify-end gap-2">
-      <button type="button">
+      <button type="button" class="theme-toggle">
         <div class="i-ri-sun-line dark:i-ri-moon-line"></div>
       </button>
-      <button type="button">
+      <a href="/search" aria-label="search">
         <div class="i-mingcute-search-3-line"></div>
-      </button>
+      </a>
       <a href="/rss.xml" target="_blank" aria-label="rss">
         <div class="i-mingcute-rss-line"></div>
       </a>

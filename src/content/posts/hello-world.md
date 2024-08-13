@@ -1,5 +1,7 @@
 ---
 title: 'zz'
 description: 'zzz'
-pubDate: 'Jul 05 2005'
+pub: 'Jul 05 2005'
 ---
+
+this is a test

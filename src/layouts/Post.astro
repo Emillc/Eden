@@ -1,29 +1,61 @@
 ---
-import Head from '../components/Head.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
+import type { CollectionEntry } from 'astro:content'
+import Layout from './Common.astro'
 
 interface Props {
-  title: string
-  description: string
+  post: CollectionEntry<'posts'>
 }
 
-const { title, description } = Astro.props
+const { post } = Astro.props
+
+const {
+  title,
+  author,
+  description,
+  pub,
+  upd,
+  tags,
+  draft,
+  ogImage,
+  canonicalURL,
+} = post.data
+
+// const headProps = {
+//   title,
+//   description,
+//   canonicalURL,
+// }
 ---
 
-<html lang="zh">
-  <head>
-    <Head title={title} description={description} />
-    <!-- <style src="../styles/global.css" /> -->
-  </head>
-
-  <body>
-    <Header />
-    <main>
-      <article>
-        <slot />
-      </article>
-    </main>
-    <Footer />
-  </body>
-</html>
+<Layout title={title} description={description}>
+  <article>
+    <div>{author}</div>
+    <div>{pub}</div>
+    <slot />
+    {
+      upd && (
+        <div>{upd}</div>
+      )
+    }
+    {
+      tags && (
+        <div>{tags}</div>
+      )
+    }
+    {
+      draft && (
+        <div>{draft}</div>
+      )
+    }
+    {
+      ogImage && (
+        <div>{ogImage}</div>
+      )
+    }
+    {
+      canonicalURL && (
+        <div>{canonicalURL}</div>
+      )
+    }
+  </article>
+</Layout>

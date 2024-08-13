@@ -1,14 +1,23 @@
 import { defineCollection, z } from 'astro:content'
+import config from '@config'
+
+const { author } = config
 
 const posts = defineCollection({
   type: 'content',
-  // Type-check frontmatter using a schema
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
-    description: z.string(),
-    // Transform string to Date object
-    pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
+    author: z.string().default(author),
+    description: z.string().default(''),
+    pub: z.coerce.date(),
+    upd: z.coerce.date().optional(),
+    tags: z.array(z.string()).default(['others']),
+    draft: z.boolean().default(false),
+    ogImage: image()
+      .refine(img => img.width >= 1200 && img.height >= 630, 'OpenGraph image must be at least 1200 x 630 pixels!')
+      .or(z.string())
+      .optional(),
+    canonicalURL: z.string().optional(),
   }),
 })
 

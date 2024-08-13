@@ -1,0 +1,40 @@
+---
+import Head from '@components/Head.astro'
+import Header from '@components/Header.astro'
+import Footer from '@components/Footer.astro'
+
+import config from '@config'
+
+interface Props {
+  title: string
+  description?: string
+}
+
+const { title: siteTitle, description: siteDescription } = config
+
+const { title, description } = Astro.props
+---
+
+<html lang="zh" class="h-full">
+  <head>
+    <Head title={`${title} — ${siteTitle}`} description={description || siteDescription}>
+      <slot name="head" />
+    </Head>
+  </head>
+  <body class="text h-full flex flex-col transition-colors-300">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: var(--base);
+    font-family: 'TsangerJinKai', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+</style>

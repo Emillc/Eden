@@ -1,6 +1,10 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
+declare module 'remark-collapse'
+
+type MaybeArray<T> = T | T[]
+
 interface UserConfig {
   url: string
   title: string
@@ -23,12 +27,13 @@ interface FooterConfig {
     text: string
     url: string
   }
-  socialLinks: SocialLinkItem[]
+  socialLinks: SocialLink[]
 }
 
-interface SocialLinkItem {
+interface SocialLink {
   name: string
   url: string
+  icon?: string
 }
 
 interface PageConfig {

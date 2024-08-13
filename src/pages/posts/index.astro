@@ -1,14 +1,14 @@
 ---
 import { getCollection } from 'astro:content'
 
-import config from '../../config'
-import Head from '../../components/Head.astro'
-import Header from '../../components/Header.astro'
-import Footer from '../../components/Footer.astro'
+import config from '@config'
+import Head from '@components/Head.astro'
+import Header from '@components/Header.astro'
+import Footer from '@components/Footer.astro'
 
 const { title, description } = config
 
-const posts = (await getCollection('posts')).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
+const posts = (await getCollection('posts')).sort((a, b) => a.data.pub.valueOf() - b.data.pub.valueOf())
 ---
 
 <!doctype html>

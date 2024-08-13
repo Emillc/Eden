@@ -10,6 +10,7 @@
     "astro",
     "astrojs",
     "Attributify",
+    "catppuccin",
     "chillcicada",
     "crossorigin",
     "fontmin",
@@ -21,8 +22,12 @@
     "netease",
     "nogooglebot",
     "nowrap",
+    "oneblade",
     "postbuild",
-    "Tsanger"
+    "shiki",
+    "Tsanger",
+    "tsconfigs",
+    "typstyle"
   ],
   "enableFiletypes": [
     "astro"
