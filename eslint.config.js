@@ -5,6 +5,7 @@ export default antfu({
   formatters: true,
   astro: true,
   unocss: true,
+  svelte: true,
   ignores: [
     'pnpm-lock.yaml',
   ],

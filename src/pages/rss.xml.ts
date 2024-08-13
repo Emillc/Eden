@@ -11,9 +11,14 @@ export async function GET() {
     title,
     description,
     site,
-    items: posts.map(post => ({
-      ...post.data,
-      link: `/posts/${post.slug}/`,
-    })),
+    items: posts.map((post) => {
+      const { pub: pubDate, ...rest } = post.data
+
+      return {
+        ...rest,
+        pubDate,
+        link: `/posts/${post.slug}/`,
+      }
+    }),
   })
 }
