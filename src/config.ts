@@ -2,22 +2,22 @@ export const socialLinks: SocialLink[] = [
   {
     url: 'https://github.com/chillcicada',
     name: 'GitHub',
-    icon: 'i-mingcute:github-line',
+    icon: 'mingcute:github-line',
   },
   {
     url: 'https://music.163.com/#/user/home?id=1403030074',
     name: 'Netease Cloud Music',
-    icon: 'i-mingcute:music-line',
+    icon: 'mingcute:music-line',
   },
   {
     url: 'https://qm.qq.com/q/8PV369Zlvy',
     name: 'QQ',
-    icon: 'i-mingcute:qq-line',
+    icon: 'mingcute:qq-line',
   },
   {
     url: 'mailto:2210227279@qq.com',
     name: 'Email',
-    icon: 'i-mingcute:mail-line',
+    icon: 'mingcute:mail-line',
   },
 ]
 

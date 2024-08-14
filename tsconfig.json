@@ -2,19 +2,20 @@
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "jsx": "preserve",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"],
-      "@@/*": ["../*"],
-      "@assets/*": ["assets/*"],
-      "@config": ["config.ts"],
-      "@utils": ["utils/index.ts"],
-      "@components/*": ["components/*"],
-      "@content/*": ["content/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"]
-    }
+      "@/*": ["src/*"],
+      "@@/*": ["*"],
+      "@assets/*": ["src/assets/*"],
+      "@config": ["src/config.ts"],
+      "@utils/*": ["src/utils/*"],
+      "@components/*": ["src/components/*"],
+      "@content/*": ["src/content/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"]
+    },
+    "types": ["vitest/globals"]
   },
   "exclude": ["node_modules", "dist"]
 }

@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config'
 import unocss from 'unocss/astro'
 import sitemap from '@astrojs/sitemap'
+import svelte from '@astrojs/svelte'
 import remarkToc from 'remark-toc'
 import remarkCollapse from 'remark-collapse'
 import config from './src/config'
@@ -15,6 +16,7 @@ export default defineConfig({
       injectReset: true,
     }),
     sitemap(),
+    svelte(),
   ],
 
   markdown: {

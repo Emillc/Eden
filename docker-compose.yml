@@ -1,0 +1,11 @@
+version: 3
+
+services:
+  web:
+    image: node:22
+    ports:
+      - 4444:4444
+    working_dir: /web
+    command: npm i && npm run build && npm run preview -- --host 0.0.0.0
+    volumes:
+      - ./:/web

@@ -1,5 +1,6 @@
 ---
 import config from '@config'
+import loadIcon from '@utils/loadIcon'
 
 const { author } = config
 const { socialLinks, license } = config.footer
@@ -16,6 +17,12 @@ const year = new Date().getFullYear()
       <ul class="subtext0 transition-colors-300">
         {
           socialLinks.map(item => (
+            <svg
+              class="h-2em w-2em"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              set:html={item.icon && loadIcon(item.icon)}
+            ></svg>
             <li>
               <a href={item.url} target="_blank">
                 <p>{item.name}</p>

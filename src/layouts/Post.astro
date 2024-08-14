@@ -20,14 +20,9 @@ const {
   canonicalURL,
 } = post.data
 
-// const headProps = {
-//   title,
-//   description,
-//   canonicalURL,
-// }
 ---
 
-<Layout title={title} description={description}>
+<Layout {title} {description}>
   <article>
     <div>{author}</div>
     <div>{pub}</div>
