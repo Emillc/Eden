@@ -15,8 +15,10 @@
     "chillcicada",
     "crossorigin",
     "divriots",
+    "Emillc",
     "fontmin",
     "Googlebot",
+    "iconify",
     "INFP",
     "jampack",
     "lightningcss",
@@ -30,7 +32,9 @@
     "shiki",
     "Tsanger",
     "tsconfigs",
-    "typstyle"
+    "typstyle",
+    "unocss",
+    "vitest"
   ],
   "enableFiletypes": [
     "astro"
