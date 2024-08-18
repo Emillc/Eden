@@ -1,23 +1,28 @@
 ---
-import Head from '@components/Head.astro'
-import Header from '@components/Header.astro'
-import Footer from '@components/Footer.astro'
+import Head from '@/components/Head.astro'
+import Header from '@/components/Header.astro'
+import Footer from '@/components/Footer.astro'
 
-import config from '@config'
+import config from '@/config/common'
 
 interface Props {
   title: string
   description?: string
+  canonicalURL?: string
+  image?: string
 }
 
-const { title: siteTitle, description: siteDescription } = config
+const { title: siteTitle, description: siteDescription, locale } = config
 
 const { title, description } = Astro.props
 ---
 
-<html lang="zh" class="h-full">
+<html lang={locale ?? 'en'} class="h-full">
   <head>
-    <Head title={`${title} — ${siteTitle}`} description={description || siteDescription}>
+    <Head
+      title={`${title} ~ ${siteTitle}`}
+      description={description || siteDescription}
+    >
       <slot name="head" />
     </Head>
   </head>

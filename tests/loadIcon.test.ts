@@ -1,4 +1,4 @@
-import loadIcon from 'src/utils/loadIcon'
+import loadIcon from '@/utils/loadIcon'
 
 describe('loadIcon', async () => {
   it('should return a icon string', async () => {

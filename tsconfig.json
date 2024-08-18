@@ -5,15 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@": ["src"],
       "@@/*": ["*"],
-      "@assets/*": ["src/assets/*"],
-      "@config": ["src/config.ts"],
-      "@utils/*": ["src/utils/*"],
-      "@components/*": ["src/components/*"],
-      "@content/*": ["src/content/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
-      "@styles/*": ["src/styles/*"]
+      "@@": ["."]
     },
     "types": ["vitest/globals"]
   },

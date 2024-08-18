@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
 import { version } from '@@/package.json'
-import '@styles/global.css'
+import '@/styles/global.css'
 
 interface Props {
   title: string
@@ -10,7 +10,12 @@ interface Props {
   image?: string
 }
 
-const { title, description, canonicalURL = new URL(Astro.url.pathname, Astro.site), image = '' } = Astro.props
+const {
+  title,
+  description,
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).toString(),
+  image = '',
+} = Astro.props
 ---
 
 <!-- Global Metadata -->
@@ -21,7 +26,7 @@ const { title, description, canonicalURL = new URL(Astro.url.pathname, Astro.sit
 <meta name="version" content={`@emillc/eden v${version}`} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/TsangerJinKai03-W04.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/TsangerJinKai03-W03.ttf" as="font" type="font/ttf" crossorigin />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -41,9 +46,7 @@ const { title, description, canonicalURL = new URL(Astro.url.pathname, Astro.sit
 <!-- Rss auto discover -->
 <link rel="alternate" type="application/rss+xml" title={title} href={new URL('rss.xml', Astro.site)} />
 
-<!-- Transition -->
-<ViewTransitions />
-
+<!-- Theme Toggle -->
 <script is:inline>
 function _isDark() {
   const currentDark = localStorage.getItem('dark')
@@ -54,24 +57,39 @@ function _isDark() {
 
 let isDark = _isDark()
 
-document.documentElement.classList.toggle('dark', isDark)
+const _setTheme = () => document.documentElement.classList.toggle('dark', isDark)
+
+_setTheme()
+
+function setTheme() {
+  _setTheme()
+  localStorage.setItem('dark', isDark.toString())
+}
 
 function toggleTheme() {
   isDark = !isDark
-  localStorage.setItem('dark', isDark.toString())
-  document.documentElement.classList.toggle('dark', isDark)
+  setTheme()
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
   isDark = e.matches
-  localStorage.setItem('dark', isDark.toString())
-  document.documentElement.classList.toggle('dark', isDark)
+  setTheme()
 })
 
 window.addEventListener('load', () => {
-  document.querySelector('.theme-toggle')?.addEventListener('click', toggleTheme)
+  const listener = () => document.querySelector('.theme-toggle')?.addEventListener('click', toggleTheme)
+
+  listener()
+
+  document.addEventListener('astro:after-swap', () => {
+    _setTheme()
+    listener()
+  })
 })
 </script>
+
+<!-- Transition -->
+<ViewTransitions />
 
 <!-- Slot -->
 <slot />

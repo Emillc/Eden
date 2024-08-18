@@ -1,21 +1,21 @@
 ---
-import config from '@config'
+import config from '@/config'
 
 const { logoText } = config.header
 ---
 
-<header>
+<header class="select-none">
   <nav class="mxa max-w-4xl flex items-center justify-between px-4 py-7">
     <a href="/" class="whitespace-nowrap text-10">{logoText}</a>
     <div class="social-links w-full flex justify-end gap-2">
       <button type="button" class="theme-toggle">
-        <div class="i-ri-sun-line dark:i-ri-moon-line"></div>
+        <div class="i-ri-sun-line dark:i-ri-moon-line" />
       </button>
       <a href="/search" aria-label="search">
-        <div class="i-mingcute-search-3-line"></div>
+        <div class="i-mingcute-search-3-line" />
       </a>
       <a href="/rss.xml" target="_blank" aria-label="rss">
-        <div class="i-mingcute-rss-line"></div>
+        <div class="i-mingcute-rss-line" />
       </a>
     </div>
   </nav>

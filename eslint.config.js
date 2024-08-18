@@ -8,5 +8,6 @@ export default antfu({
   svelte: true,
   ignores: [
     'pnpm-lock.yaml',
+    'docker-compose.yml',
   ],
 })

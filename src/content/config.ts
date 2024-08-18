@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content'
-import config from '@config'
+import config from '@/config/common'
 
 const { author } = config
 

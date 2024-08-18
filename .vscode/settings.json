@@ -64,5 +64,8 @@
     "pnpm-lock.yaml": true
   },
   "explorerExclude.backup": {},
-  "references.preferredLocation": "view"
+  "references.preferredLocation": "view",
+  "[astro]": {
+    "editor.formatOnPaste": false
+  }
 }

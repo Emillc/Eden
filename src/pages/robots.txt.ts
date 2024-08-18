@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro'
-import config from '@config'
+import config from '@/config'
 
 const { url } = config
 

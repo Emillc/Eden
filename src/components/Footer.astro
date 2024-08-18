@@ -1,9 +1,9 @@
 ---
-import config from '@config'
-import loadIcon from '@utils/loadIcon'
+import { common, footer, socialLinks } from '@/config'
+import loadIcon from '@/utils/loadIcon'
 
-const { author } = config
-const { socialLinks, license } = config.footer
+const { author } = common
+const { license } = footer
 const year = new Date().getFullYear()
 ---
 
@@ -17,13 +17,13 @@ const year = new Date().getFullYear()
       <ul class="subtext0 transition-colors-300">
         {
           socialLinks.map(item => (
-            <svg
-              class="h-2em w-2em"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              set:html={item.icon && loadIcon(item.icon)}
-            ></svg>
-            <li>
+            <li class="flex items-center gap-1">
+              <svg
+                class="h-2em w-2em"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                set:html={item.icon && loadIcon(item.icon)}
+              />
               <a href={item.url} target="_blank">
                 <p>{item.name}</p>
               </a>
@@ -33,6 +33,7 @@ const year = new Date().getFullYear()
       </ul>
     </nav>
     <a class="license" href={license.url} target="_blank">
+      <p>Released under</p>
       <p>{license.text}</p>
     </a>
   </div>
