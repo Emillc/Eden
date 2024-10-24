@@ -8,7 +8,7 @@ import Footer from '@/components/Footer.astro'
 
 const { title, description } = config
 
-const posts = (await getCollection('posts')).sort((a, b) => a.data.pub.valueOf() - b.data.pub.valueOf())
+const posts = (await getCollection('posts')).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
 ---
 
 <!doctype html>

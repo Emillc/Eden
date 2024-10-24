@@ -51,7 +51,8 @@ export default defineConfig({
 
   vite: {
     css: {
-      transformer: import.meta.env.MODE === 'development' ? 'postcss' : 'lightningcss',
+      transformer: import.meta.env.DEV ? 'postcss' : 'lightningcss',
     },
+    cacheDir: '.vite',
   },
 })

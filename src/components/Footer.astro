@@ -1,6 +1,5 @@
 ---
 import { common, footer, socialLinks } from '@/config'
-import loadIcon from '@/utils/loadIcon'
 
 const { author } = common
 const { license } = footer
@@ -22,7 +21,7 @@ const year = new Date().getFullYear()
                 class="h-2em w-2em"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-                set:html={item.icon && loadIcon(item.icon)}
+                set:html={item.icon}
               />
               <a href={item.url} target="_blank">
                 <p>{item.name}</p>

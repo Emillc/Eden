@@ -17,11 +17,12 @@
     "sync": "astro sync",
     "check": "astro check",
     "astro": "astro",
-    "astro:up": "npx @astrojs/upgrade",
+    "astro:up": "pnpm dlx @astrojs/upgrade",
     "lint": "eslint .",
     "cz": "cz",
     "lint:fix": "eslint --fix .",
-    "fontmin": "node ./scripts/fontmin",
+    "font:min": "node ./scripts/fontmin",
+    "font:prune": "rimraf ./dist/fonts",
     "jampack": "jampack ./dist",
     "postinstall": "simple-git-hooks",
     "postbuild": "node ./scripts/fontmin && jampack ./dist && node ./scripts/postbuild"
@@ -57,6 +58,7 @@
     "html-minifier": "4.0.0",
     "lightningcss": "1.25.1",
     "lint-staged": "15.2.7",
+    "rimraf": "6.0.1",
     "simple-git-hooks": "2.11.1",
     "terser": "5.31.3",
     "typescript": "5.5.4",
@@ -77,7 +79,10 @@
     "*.{[jt]s,json,y{,a}ml,astro,css,svelte,md}": [
       "eslint --fix"
     ],
-    "*.typ": "typstyle -i"
+    "*.typ": [
+      "typstyle -i",
+      "git add"
+    ]
   },
   "jampack": {}
 }

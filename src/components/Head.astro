@@ -16,6 +16,8 @@ const {
   canonicalURL = new URL(Astro.url.pathname, Astro.site).toString(),
   image = '',
 } = Astro.props
+
+const ThrottlingMode = true
 ---
 
 <!-- Global Metadata -->
@@ -26,6 +28,27 @@ const {
 <meta name="version" content={`@emillc/eden v${version}`} />
 
 <!-- Font preloads -->
+
+{
+  !(ThrottlingMode) && (
+    <link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhCq3-cXbKDO1w.woff2" as="font" type="font/woff2" crossorigin />
+  )
+}
+
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhGq3-cXbKDO1w.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhPq3-cXbKDO1w.woff2" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhHq3-cXbKDO1w.woff2" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhIq3-cXbKDO1w.woff2" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhEq3-cXbKDO1w.woff2" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhFq3-cXbKDO1w.woff2" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/L0x5DF4xlVMF-BfR8bXMIjhLq3-cXbKD.woff2" as="font" type="font/woff" crossorigin />
+
+<link rel="preload" href="/fonts/Livvic-Italic.otf" as="font" type="font/otf" crossorigin />
+<link rel="preload" href="/fonts/Livvic-Regular.otf" as="font" type="font/otf" crossorigin />
+<link rel="preload" href="/fonts/Merriweather-Light.otf" as="font" type="font/otf" crossorigin />
+<link rel="preload" href="/fonts/Merriweather-LightItalic.otf" as="font" type="font/otf" crossorigin />
+
+<link rel="preload" href="/fonts/LXGWWenKaiMono-Regular.ttf" as="font" type="font/ttf" crossorigin />
 <link rel="preload" href="/fonts/TsangerJinKai03-W03.ttf" as="font" type="font/ttf" crossorigin />
 
 <!-- Canonical URL -->

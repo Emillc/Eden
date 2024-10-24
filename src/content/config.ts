@@ -9,8 +9,8 @@ const posts = defineCollection({
     title: z.string(),
     author: z.string().default(author),
     description: z.string().default(''),
-    pub: z.coerce.date(),
-    upd: z.coerce.date().optional(),
+    pubDate: z.coerce.date(),
+    updDate: z.coerce.date().optional(),
     tags: z.array(z.string()).default(['others']),
     draft: z.boolean().default(false),
     ogImage: image()
