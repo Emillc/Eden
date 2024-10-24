@@ -1,5 +1,5 @@
 ---
 title: 'zz'
 description: 'zzz'
-pub: 'Jul 05 2005'
+pubDate: 'Jul 05 2005'
 ---

@@ -4,6 +4,7 @@ import sitemap from '@astrojs/sitemap'
 import svelte from '@astrojs/svelte'
 import remarkToc from 'remark-toc'
 import remarkCollapse from 'remark-collapse'
+import icon from 'astro-icon'
 import config from './src/config/common'
 
 // https://astro.build/config
@@ -17,6 +18,7 @@ export default defineConfig({
     }),
     sitemap(),
     svelte(),
+    icon(),
   ],
 
   markdown: {

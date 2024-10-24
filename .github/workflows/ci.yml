@@ -58,7 +58,6 @@ jobs:
           files: |
             **/*.js
             **/*.ts
-            **/*.md
             **/*.json
             **/*.yml
             **/*.yaml

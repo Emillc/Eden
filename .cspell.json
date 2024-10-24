@@ -17,6 +17,7 @@
     "chillcicada",
     "commitlint",
     "crossorigin",
+    "direnv",
     "divriots",
     "Emillc",
     "fontmin",
@@ -26,6 +27,9 @@
     "INFP",
     "jampack",
     "lightningcss",
+    "Livvic",
+    "LXGW",
+    "Merriweather",
     "mingcute",
     "neovim",
     "netease",
@@ -42,6 +46,7 @@
     "vitest"
   ],
   "enableFiletypes": [
+    "!markdown",
     "astro"
   ]
 }

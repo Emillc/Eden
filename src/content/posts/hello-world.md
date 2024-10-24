@@ -1,7 +1,7 @@
 ---
-title: 'zz'
-description: 'zzz'
-pub: 'Jul 05 2005'
+title: 'Hello, World!'
+description: 'The first post of Eden.'
+pubDate: 'Sept 14 1987'
 ---
 
-this is a test
+Hello, world!

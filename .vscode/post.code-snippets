@@ -1,20 +1,18 @@
 {
-  "Frontmatter": {
+  "Post-Frontmatter": {
     "scope": "markdown",
     "prefix": "frontmatter",
     "body": [
       "---",
-      "author: $1",
-      "pub: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}",
-      "mod: $3",
-      "title: $4",
-      "featured: ${5|false,true|}",
-      "draft: ${6|true,false|}",
+      "title: Your Title",
+      "description: The Description",
+      "author: chillcicada",
+      "pubDate: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}",
+      "draft: ${1|true,false|}",
       "tags:",
-      "  - $7",
-      "description: $8",
+      "  - others",
       "---",
     ],
-    "description": "Adds the frontmatter block for the AstroPaper Blog post"
+    "description": "Adds the frontmatter block for Eden."
   }
 }

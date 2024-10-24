@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components'
 import { common, footer, socialLinks } from '@/config'
 
 const { author } = common
@@ -17,13 +18,8 @@ const year = new Date().getFullYear()
         {
           socialLinks.map(item => (
             <li class="flex items-center gap-1">
-              <svg
-                class="h-2em w-2em"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                set:html={item.icon}
-              />
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" class="flex flex-row">
+                <Icon name={item.icon} size="2rem" />
                 <p>{item.name}</p>
               </a>
             </li>

@@ -61,10 +61,14 @@
     "**/node_modules": true,
     "**/.venv": true,
     ".astro": true,
-    "pnpm-lock.yaml": true
+    "pnpm-lock.yaml": true,
+    ".direnv": true,
+    ".vite": true
   },
   "explorerExclude.backup": {},
+
   "references.preferredLocation": "view",
+
   "[astro]": {
     "editor.formatOnPaste": false
   }
