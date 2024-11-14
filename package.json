@@ -36,7 +36,7 @@
     "remark-toc": "9.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.24.0",
+    "@antfu/eslint-config": "3.9.1",
     "@astrojs/check": "0.9.1",
     "@astrojs/rss": "4.0.7",
     "@astrojs/sitemap": "3.1.6",
