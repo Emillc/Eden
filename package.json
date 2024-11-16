@@ -74,7 +74,7 @@
     }
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged && astro check",
+    "pre-commit": "npx lint-staged && npx astro check",
     "commit-msg": "npx commitlint -e $1"
   },
   "lint-staged": {

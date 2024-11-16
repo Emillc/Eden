@@ -1,7 +1,7 @@
 import colophon from './colophon'
-import header from './header'
-import footer from './footer'
 import common from './common'
+import footer from './footer'
+import header from './header'
 
 const config: UserConfig = {
   ...common,
@@ -18,5 +18,5 @@ const config: UserConfig = {
 } as const
 
 export default config
-export { common, header, footer, colophon }
+export { colophon, common, footer, header }
 export { default as socialLinks } from './socialLinks'

@@ -1,10 +1,10 @@
-import { defineConfig } from 'astro/config'
-import unocss from 'unocss/astro'
 import sitemap from '@astrojs/sitemap'
 import svelte from '@astrojs/svelte'
-import remarkToc from 'remark-toc'
-import remarkCollapse from 'remark-collapse'
+import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
+import remarkCollapse from 'remark-collapse'
+import remarkToc from 'remark-toc'
+import unocss from 'unocss/astro'
 import config from './src/config/common'
 
 // https://astro.build/config

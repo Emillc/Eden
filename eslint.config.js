@@ -10,4 +10,7 @@ export default antfu({
     'pnpm-lock.yaml',
     'docker-compose.yml',
   ],
+  rules: {
+    'antfu/no-top-level-await': 'off',
+  },
 })

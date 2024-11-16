@@ -1,7 +1,7 @@
-import rss from '@astrojs/rss'
+import config from '@/config'
 
 import getPosts from '@/utils/getPosts'
-import config from '@/config'
+import rss from '@astrojs/rss'
 
 const { description, title, url: site } = config
 

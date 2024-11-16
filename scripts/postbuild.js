@@ -3,8 +3,8 @@
 import fs from 'node:fs'
 import process from 'node:process'
 import { minify as minifyHtml } from 'html-minifier'
-import { minify as minifyJs } from 'terser'
 import { transform as transformCss } from 'lightningcss'
+import { minify as minifyJs } from 'terser'
 
 import { getFiles } from './utils.js'
 
