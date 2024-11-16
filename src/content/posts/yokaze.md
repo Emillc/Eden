@@ -1,3 +1,13 @@
+---
+title: yokaze
+description: No Description
+author: chillcicada
+pubDate: 2024-11-16
+draft: false
+tags:
+  - others
+---
+
 ## 《ghostpia》&《unreal life》&《moonless moon》漫评
 
 > 不含剧透，可放心食用。

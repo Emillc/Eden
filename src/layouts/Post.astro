@@ -1,9 +1,10 @@
 ---
+// used for `/posts/:slug`
 import type { CollectionEntry } from 'astro:content'
 import Layout from './Common.astro'
 
 interface Props {
-  post: CollectionEntry<'post'>
+  post: CollectionEntry<'posts'>
 }
 
 const { post } = Astro.props

@@ -1,3 +1,13 @@
+---
+title: Oath
+description: No Description
+author: chillcicada
+pubDate: 2024-11-10
+draft: false
+tags:
+  - others
+---
+
 ## Oath
 
 > 从 Sewerslvt 说起，

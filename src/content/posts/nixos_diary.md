@@ -1,11 +1,11 @@
 ---
-author: chillcicada
+title: Nixos 手记
+description: No Description
 pubDate: 2024-10-24
-title: 'Nixos 手记'
+author: chillcicada
 draft: false
 tags:
   - others
-description: 'Nixos 手记'
 ---
 
 ## Nixos 手记

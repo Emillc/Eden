@@ -5,10 +5,10 @@
     "body": [
       "---",
       "title: Your Title",
-      "description: The Description",
+      "description: No Description",
       "author: chillcicada",
       "pubDate: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}",
-      "draft: ${1|true,false|}",
+      "draft: ${1|false,true|}",
       "tags:",
       "  - others",
       "---",

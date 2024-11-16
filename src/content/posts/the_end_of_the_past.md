@@ -1,11 +1,11 @@
 ---
+title: 往事的终结
+description: 往事的终结
 author: chillcicada
 pubDate: 2024-11-11
-title: '往事的终结'
 draft: false
 tags:
   - others
-description: '往事的终结'
 ---
 
 ## 往事的终结

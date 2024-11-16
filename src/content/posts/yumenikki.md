@@ -1,6 +1,11 @@
 ---
-author: Emillc
-title: yumenikki
+title: Yume Nikki
+description: No Description
+author: chillcicada
+pubDate: 2024-11-16
+draft: false
+tags:
+  - others
 ---
 
 ## Project YN —— 来自同人的奇迹

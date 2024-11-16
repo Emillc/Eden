@@ -1,6 +1,6 @@
 {
   // Enable astro inlay hints
-  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "literals",
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,

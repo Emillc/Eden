@@ -3,7 +3,7 @@ import config from '@/config/common'
 
 const { author } = config
 
-const post = defineCollection({
+const posts = defineCollection({
   type: 'content',
   schema: ({ image }) => z.object({
     /** The title of the post */
@@ -13,23 +13,26 @@ const post = defineCollection({
     author: z.string().default(author),
 
     /** The description of the post */
-    description: z.string().default(''),
+    description: z.string(),
 
     /** The published date of the post */
-    pubDate: z.coerce.date(),
+    pubDate: z.date(),
 
     /** The updated date of the post */
-    updDate: z.coerce.date().optional(),
+    updDate: z.date().optional().nullable(),
 
     /** The tags of the post */
     tags: z.array(z.string()).default(['others']),
 
     /** Whether the post is a draft */
-    draft: z.boolean().default(false),
+    draft: z.boolean().optional(),
 
     /** the OpenGraph image of the post. */
     ogImage: image()
-      .refine(img => img.width >= 1200 && img.height >= 630, 'OpenGraph image must be at least 1200 x 630 pixels!')
+      .refine(
+        img => img.width >= 1200 && img.height >= 630,
+        'OpenGraph image must be at least 1200 x 630 pixels!',
+      )
       .or(z.string())
       .optional(),
 
@@ -38,4 +41,4 @@ const post = defineCollection({
   }),
 })
 
-export const collections = { post }
+export const collections = { posts }
