@@ -45,8 +45,8 @@
     "unocss",
     "vitest"
   ],
-  "enableFiletypes": [
-    "!markdown",
-    "astro"
-  ]
+  "enabledFileTypes": {
+    "markdown": false,
+    "astro": true
+  }
 }

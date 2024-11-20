@@ -3,19 +3,9 @@ layout: ../layouts/About.astro
 title: About me
 ---
 
-一些属性：
+Some information about me.
 
-- vscode · neovim 使用者
-- 纯种 INFP-T（伪）
-- 不著名极端村上黑（存疑）
-- ... (待补充)
-
-<!-- ## 节流模式
-
-节流模式默认启用，不会加载字体和图片，仅渲染文字。
-
-默认情况下不会为您拉取字体和图片，而是回滚您本地的字体，启用后将为您自动拉取字体，不过请您方向，字体已全部压缩子集化，约消耗 ～1MB 的流量。
-
-> 为什么设置节流模式？
->
-> 字体和图片的加载非常消耗流量，本博客参与 512KB 俱乐部，对流量进行了严格优化，希望您可以理解。 -->
+- Windows 11 & NixOS User
+- Mainly use vscode · neovim · zsh & powershell
+- INFP-t (the result came from 4 years ago)
+- ... (To be completed)

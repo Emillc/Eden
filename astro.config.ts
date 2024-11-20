@@ -53,6 +53,7 @@ export default defineConfig({
 
   vite: {
     css: {
+      // ! lightningcss will cause a crash in build mode
       transformer: import.meta.env.DEV ? 'postcss' : 'lightningcss',
     },
     cacheDir: '.vite',
