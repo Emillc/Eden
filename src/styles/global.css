@@ -45,6 +45,3 @@ hr {
   @apply select-none;
   border-color: var(--lavender);
 }
-
-/* article */
-@import './article.css';

@@ -3,6 +3,7 @@ import svelte from '@astrojs/svelte'
 import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
 import remarkCollapse from 'remark-collapse'
+import remarkEmoji from 'remark-emoji'
 import remarkToc from 'remark-toc'
 import unocss from 'unocss/astro'
 import config from './src/config/common'
@@ -36,6 +37,12 @@ export default defineConfig({
         remarkCollapse,
         { // https://github.com/Rokt33r/remark-collapse?tab=readme-ov-file#api
           test: 'TOC',
+        },
+      ],
+      [
+        remarkEmoji,
+        { // https://github.com/rhysd/remark-emoji?tab=readme-ov-file#options
+          accessible: true,
         },
       ],
     ],

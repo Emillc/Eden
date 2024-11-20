@@ -32,6 +32,6 @@ tags:
 
 ### Snapshots
 
-![](/home/cc/.local/share/Steam/userdata/1061345739/760/remote/3287650/screenshots/20241115131921_1.jpg)
+![](https://img.chillcicada.com/i/2024/11/20/673dfc9279437.jpg)
 
 ### Supplementary informationxit

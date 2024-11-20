@@ -47,6 +47,7 @@
   ],
   "enabledFileTypes": {
     "markdown": false,
-    "astro": true
+    "astro": true,
+    "postcss": false
   }
 }
