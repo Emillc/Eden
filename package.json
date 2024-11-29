@@ -37,7 +37,7 @@
     "remark-toc": "9.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.9.2",
+    "@antfu/eslint-config": "3.11.2",
     "@astrojs/check": "0.9.4",
     "@astrojs/rss": "4.0.9",
     "@astrojs/sitemap": "3.2.1",
@@ -46,10 +46,10 @@
     "@commitlint/config-conventional": "19.6.0",
     "@divriots/jampack": "0.30.0",
     "@types/html-minifier": "4.0.5",
-    "@types/node": "22.9.3",
+    "@types/node": "22.10.1",
     "@unocss/eslint-plugin": "0.64.1",
     "@unocss/reset": "^0.64.1",
-    "astro": "4.16.14",
+    "astro": "4.16.16",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "9.15.0",
@@ -65,9 +65,9 @@
     "simple-git-hooks": "2.11.1",
     "terser": "5.36.0",
     "typescript": "5.7.2",
-    "typstyle": "0.12.4",
+    "typstyle": "0.12.5",
     "unocss": "0.64.1",
-    "vitest": "2.1.5"
+    "vitest": "2.1.6"
   },
   "config": {
     "commitizen": {
