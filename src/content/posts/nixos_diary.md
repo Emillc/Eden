@@ -47,3 +47,11 @@ Nixos 的坑比我想象的多不少，安装就花了我不少时间（具体�
 之前看过一个讲 “Why you should use nixos” 的视频，其中一点就是希望初学者都来用 Nixos，这个说法其实不无道理，Nixos 的特性真的非常适合一个流动的系统状态，在深入使用中不可避免地涉及打包，这也规训着使用着向函数式构建模式的方向靠拢，当然，这同时也意味着 Nixos 更大的门槛，但我觉得，只要你有兴趣去做，这些应该不成问题。
 
 我的 nixos-config 配置在 <https://github.com/chillcicada/nixos-config>
+
+---
+
+20241208
+
+原先我以为 Fcitx5 是无法用 Nix 管理的（尽管确实如此），不过一些不太会改的配置还是可以管理的。
+
+目前存在的问题，在一些 electron 窗口中 fcitx5 会失效，详见 [#17](https://github.com/chillcicada/nixos-config/issues/17)。
