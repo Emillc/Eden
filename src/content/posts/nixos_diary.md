@@ -55,3 +55,26 @@ Nixos 的坑比我想象的多不少，安装就花了我不少时间（具体�
 原先我以为 Fcitx5 是无法用 Nix 管理的（尽管确实如此），不过一些不太会改的配置还是可以管理的。
 
 目前存在的问题，在一些 electron 窗口中 fcitx5 会失效，详见 [#17](https://github.com/chillcicada/nixos-config/issues/17)。
+
+---
+
+20250103
+
+把 ci 设置成一月一更新后，日常处理 nixos 的时间就少了许多，不过尽管这些零散的时间没了，但实际的时间开销是一点没少，这个月初同时也刚好是 2025 年伊始做了第一次系统大更新，然后就出了一系列情况。
+
+从 `flake.lock` 的变更情况看唯一可见的大更新是 `catppuccin` 的变动，不过此项影响不多。影响更新的包有两个，qemu(quickemu) 和 seafile client，前者是依赖项 python 3.11 trustme 包神秘原因没有更新然后没过测试导致构建失败，后者是依赖项 libsearpc 包无法构建，二者都是近期的上游推送，看到是近期的 issus，于是之间先注释掉解决「能」更新的问题，目前到这一部都还好说。接着是考虑到 nixos 24.05 已经弃用，于是顺手把 channel 升级到了 nixos 24.11，同时由于尝试了一下 zen-browser，顺手加了个作为默认浏览器。
+
+要说万恶之源就是这个 zen-browser 了，nixos 上读不到 firefox 的数据，于是只能手动迁移了，然后数据同步的时候出了很多 bug，诸如「幽灵设置」等等，到这我也按住了（毕竟 zen browser 确实合我胃口），大概花了一个多小时，我才把 firefox 上的数据与配置和 windows 上 edge 的数据与配置完美迁移到 zen browser，终于可以用了吗，我这么想着，然后就发现 ime 失效了，没有气馁的我查询了一下相关 issues，首先觉得是设置的问题，于是倒腾了一圈，当然一无所获，回到问题的原点又审视了一下，猜测是 wayland 的问题，查询了一下大致是符合的（wayland 与 ime 与老问题了，不过在 firefox 上倒没有这个问题），这时我想到有时候 fcitx5 会有一些灵车问题，也许是没有正常加载，索性重启了一番，然后噩梦就开始了……
+
+噩梦的起因是 clash-verge-rev 进行了一次大版本更新，而这个更新发生在月初，也就是 20250101，要命的是我设置的 update ci 是每月第一天的半夜，换言之，我没有任何机会获得此次更新反馈，然后就出问题了，clash 无法启动，无法确定病症的情况下我只能乱医了，首先我觉得是 clash 的问题（当然也确实），一番折腾无果，于是我找上了 clash-nyanpasu，不过这个太卡了，让我一度怀疑是不是 system proxy 更新爆了，于是我翻起了系统日志，clash 相关的只有一条，还是 info 级别的（这里说明 clash 的启动过程其实是没问题的），于是乎问题有回到了原点，到这里，我已经花了近半个下午的时间，这时无奈我只能回滚，然后我注意到了 clash-verge-rev 的文档，说是大更新建议先删掉之前的配置，我就做了，脑抽的我还 `nix store gc` 了一下，之后是漫长的重装过程（因为下载只有几十 kB，然后关键地方还会 timeout），不过终究是下回来了，当然是无事发生，问题照旧（这很 nixos），直到这时，我才想起来 clash 的日志（此前我一直觉得是系统的问题），然后日志里有这么一条：
+
+```log
+❯ cat logs/2025-01-03-2245.log
+2025-01-03 22:45:05 ERROR - failed to copy resources 'Country.mmdb' to '"/home/cc/.local/share/io.github.clash-verge-rev.clash-verge-rev/Country.mmdb"', No such file or directory (os error 2)
+2025-01-03 22:45:05 ERROR - failed to copy resources 'geoip.dat' to '"/home/cc/.local/share/io.github.clash-verge-rev.clash-verge-rev/geoip.dat"', No such file or directory (os error 2)
+2025-01-03 22:45:05 ERROR - failed to copy resources 'geosite.dat' to '"/home/cc/.local/share/io.github.clash-verge-rev.clash-verge-rev/geosite.dat"', No such file or directory (os error 2)
+2025-01-03 22:45:05 INFO - reinstall service
+2025-01-03 22:45:05 ERROR - installer not found: "/nix/store/4sp3jdxlq21hzldva5s9grw83d1wr9rk-clash-verge-rev-2.0.2/bin/install-service"
+```
+
+Country 和 geo ip 是 vpn 常用的数据，显然 clash-verge-rev v2.0.0 启动时 copy 的路径有问题，开始我还抱有一点侥幸，手动贴了一份数据上去，当然是无济于事，不过问题明确了，一切都好说，overlay 一下就完事，最后就是把 ci 时间调了一下（想了一下月初更新确实不合理 :cry:），问题不大，但是是真的费时费力。
