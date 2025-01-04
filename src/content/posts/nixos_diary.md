@@ -78,3 +78,7 @@ Nixos 的坑比我想象的多不少，安装就花了我不少时间（具体�
 ```
 
 Country 和 geo ip 是 vpn 常用的数据，显然 clash-verge-rev v2.0.0 启动时 copy 的路径有问题，开始我还抱有一点侥幸，手动贴了一份数据上去，当然是无济于事，不过问题明确了，一切都好说，overlay 一下就完事，最后就是把 ci 时间调了一下（想了一下月初更新确实不合理 :cry:），问题不大，但是是真的费时费力。
+
+然后是，neovim 疑似坏了，我的 neovim 没有运行时？？
+
+clash 的问题早起按 `programs.clash-verge.enable = true` 解决了，呃呃。
