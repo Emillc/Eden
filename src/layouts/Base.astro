@@ -17,7 +17,7 @@ const { title: siteTitle, description: siteDescription, locale } = config
 const { title, description } = Astro.props
 ---
 
-<html lang={locale ?? 'en'} class="h-full">
+<html lang={locale ?? 'en'}>
   <head>
     <Head
       title={`${title} ~ ${siteTitle}`}
@@ -26,20 +26,13 @@ const { title, description } = Astro.props
       <slot name="head" />
     </Head>
   </head>
-  <body class="text h-full flex flex-col transition-colors-300">
-    <Header />
-    <main>
+  <body class="text mx-auto max-w-1440px flex flex-col transition-colors-300 md:flex-row">
+    <main class="px-3rem py-1.5rem md:w-7/10">
       <slot />
     </main>
-    <Footer />
+    <aside class="sticky top-0 hidden h-screen px-.5rem md:block md:w-3/10">
+      <Header />
+      <Footer />
+    </aside>
   </body>
 </html>
-
-<style>
-  body {
-    background-color: var(--base);
-    font-family: 'TsangerJinKai', sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-</style>

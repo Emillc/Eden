@@ -1,4 +1,0 @@
-- [ ] fix date and description
-- [ ] merge style with my typora theme
-- [ ] update svelte to v6
-- [ ] toolchain: lightningcss

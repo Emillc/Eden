@@ -2,9 +2,8 @@ import sitemap from '@astrojs/sitemap'
 import svelte from '@astrojs/svelte'
 import icon from 'astro-icon'
 import { defineConfig } from 'astro/config'
-import remarkCollapse from 'remark-collapse'
 import remarkEmoji from 'remark-emoji'
-import remarkToc from 'remark-toc'
+import { remarkAlert } from 'remark-github-blockquote-alert'
 import unocss from 'unocss/astro'
 import config from './src/config/common'
 
@@ -25,25 +24,16 @@ export default defineConfig({
   ],
 
   markdown: {
-    syntaxHighlight: 'shiki', // ensure enable shiki
-
     remarkPlugins: [
       [
-        remarkToc,
-        { // https://github.com/remarkjs/remark-toc?tab=readme-ov-file#options
-          heading: '目录',
-          maxDepth: 3,
-        },
-      ],
-      [
-        remarkCollapse,
-        { // https://github.com/Rokt33r/remark-collapse?tab=readme-ov-file#api
-          test: 'TOC',
+        remarkAlert,
+        { // https://github.com/jaywcjlove/remark-github-blockquote-alert
+          tagName: 'blockquote',
         },
       ],
       [
         remarkEmoji,
-        { // https://github.com/rhysd/remark-emoji?tab=readme-ov-file#options
+        { // https://github.com/rhysd/remark-emoji
           accessible: true,
         },
       ],
@@ -54,7 +44,6 @@ export default defineConfig({
         light: 'catppuccin-latte',
         dark: 'catppuccin-mocha',
       },
-      wrap: true,
     },
   },
 

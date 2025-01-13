@@ -1,9 +1,8 @@
 ---
-import { common, footer, socialLinks } from '@/config'
+import { common, socialLinks } from '@/config'
 import { Icon } from 'astro-icon/components'
 
 const { author } = common
-const { license } = footer
 const year = new Date().getFullYear()
 ---
 
@@ -27,15 +26,13 @@ const year = new Date().getFullYear()
         }
       </ul>
     </nav>
-    <a class="license" href={license.url} target="_blank">
-      <p>Released under</p>
-      <p>{license.text}</p>
-    </a>
+    <div>
+      <p>
+        <a href="/policy"> Privacy Policy </a>
+      </p>
+      <p>
+        <a href="/colophon"> Colophon </a>
+      </p>
+    </div>
   </div>
 </footer>
-
-<style>
-  footer {
-    background-color: var(--mantle);
-  }
-</style>

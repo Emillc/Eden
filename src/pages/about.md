@@ -28,7 +28,7 @@ Windows & NixOS 用户，后者配置见 [nixos-config][nixos-config]。
 ## 联系方式
 
 - 如果你在现实中认识我，可以直接用社交网络找我。
-- 并不打算开通评论区，具体解释参见 [社交网络中的补偿陷阱]()，如果你想联系我，可以选择邮件的方式，致信 samuicicada@gmail.com，回复不勤请见谅。
+- 并不打算开通评论区，具体解释参见 [社交网络中的补偿陷阱][]，如果你想联系我，可以选择邮件的方式，致信 i#chillcicada.com，回复不勤请见谅。
 
 [nixos-config]: https://github.com/chillcicada/nixos-config
 [Eden]: https://github.com/emillc/eden
