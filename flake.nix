@@ -32,10 +32,7 @@
           packages = with pkgs; [
             nodejs_22
             nodePackages.pnpm
-            curl
             git
-            jq
-            wget
             nixpkgs-fmt
           ];
         };
