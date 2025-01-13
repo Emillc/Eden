@@ -12,7 +12,7 @@ tags:
 
 > 先说结论，在我看来，很多 nix & nixos 问题其实是大差不差的。
 
-~~Arch 用户可以优先考虑 CachyOS 而不是 NixOS~~
+~~Arch 用户应该优先考虑 CachyOS 而不是 NixOS~~
 
 偶然的机会，今年三月中旬的时候，在 Tuna 的导引下参与了 [Towards Modern Distro](https://tuna.moe/event/2024/towards-modern-distro/) 的沙龙，也是在此次活动中，见识到了相当多的大佬，~~以及和苹果派的晚餐~~。
 
@@ -69,7 +69,7 @@ Nixos 的坑比我想象的多不少，安装就花了我不少时间（具体�
 噩梦的起因是 clash-verge-rev 进行了一次大版本更新，而这个更新发生在月初，也就是 20250101，要命的是我设置的 update ci 是每月第一天的半夜，换言之，我没有任何机会获得此次更新反馈，然后就出问题了，clash 无法启动，无法确定病症的情况下我只能乱医了，首先我觉得是 clash 的问题（当然也确实），一番折腾无果，于是我找上了 clash-nyanpasu，不过这个太卡了，让我一度怀疑是不是 system proxy 更新爆了，于是我翻起了系统日志，clash 相关的只有一条，还是 info 级别的（这里说明 clash 的启动过程其实是没问题的），于是乎问题有回到了原点，到这里，我已经花了近半个下午的时间，这时无奈我只能回滚，然后我注意到了 clash-verge-rev 的文档，说是大更新建议先删掉之前的配置，我就做了，脑抽的我还 `nix store gc` 了一下，之后是漫长的重装过程（因为下载只有几十 kB，然后关键地方还会 timeout），不过终究是下回来了，当然是无事发生，问题照旧（这很 nixos），直到这时，我才想起来 clash 的日志（此前我一直觉得是系统的问题），然后日志里有这么一条：
 
 ```log
-❯ cat logs/2025-01-03-2245.log
+$ cat logs/2025-01-03-2245.log
 2025-01-03 22:45:05 ERROR - failed to copy resources 'Country.mmdb' to '"/home/cc/.local/share/io.github.clash-verge-rev.clash-verge-rev/Country.mmdb"', No such file or directory (os error 2)
 2025-01-03 22:45:05 ERROR - failed to copy resources 'geoip.dat' to '"/home/cc/.local/share/io.github.clash-verge-rev.clash-verge-rev/geoip.dat"', No such file or directory (os error 2)
 2025-01-03 22:45:05 ERROR - failed to copy resources 'geosite.dat' to '"/home/cc/.local/share/io.github.clash-verge-rev.clash-verge-rev/geosite.dat"', No such file or directory (os error 2)
@@ -79,6 +79,12 @@ Nixos 的坑比我想象的多不少，安装就花了我不少时间（具体�
 
 Country 和 geo ip 是 vpn 常用的数据，显然 clash-verge-rev v2.0.0 启动时 copy 的路径有问题，开始我还抱有一点侥幸，手动贴了一份数据上去，当然是无济于事，不过问题明确了，一切都好说，overlay 一下就完事，最后就是把 ci 时间调了一下（想了一下月初更新确实不合理 :cry:），问题不大，但是是真的费时费力。
 
-然后是，neovim 疑似坏了，我的 neovim 没有运行时？？接着就是花了一点时间完全更新了一下我的 neovim。
+然后是，neovim 疑似坏了，我的 neovim 没有运行时？？接着就是花了一点时间完全更新了一下我的 neovim，毕竟有很久没有更新了。
 
-clash 的问题早起按 `programs.clash-verge.enable = true` 解决了，呃呃。
+clash 的（启动）问题早起按 `programs.clash-verge.enable = true` 解决了，呃呃。
+
+---
+
+如今回过来看，从我安装 Nixos 的第一刻起，已经过去了半年多的时间，也是倍感感慨，在其中投入了大把大把的时间，不过也是收获颇丰，一些问题刚开始遇到是只是毫无章法，一味地复现，现在也开始有清晰的调理，主动或被动了了解了更多底层的知识。
+
+有时候我会想，如果我把这些时间都用在主业的学习上，我现在会有这么焦虑吗，我大抵永远也无法知道答案，毕竟选择只有一次，不过，我也在不断的挫败中鉴定了对未来的想法，从前只是一味地否定自己，如今无从逃避时，才知道自己在内耗中浪费了太多的青春。
