@@ -1,10 +1,13 @@
 import config from '@/config/common'
+
+import { glob } from 'astro/loaders'
 import { defineCollection, z } from 'astro:content'
 
 const { author } = config
 
 const posts = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
+
   schema: ({ image }) => z.object({
     /** The title of the post */
     title: z.string(),
@@ -16,10 +19,10 @@ const posts = defineCollection({
     description: z.string(),
 
     /** The published date of the post */
-    pubDate: z.date(),
+    pubDate: z.coerce.date(),
 
     /** The updated date of the post */
-    updDate: z.date().optional().nullable(),
+    updDate: z.coerce.date().optional().nullable(),
 
     /** The tags of the post */
     tags: z.array(z.string()).default(['others']),

@@ -60,6 +60,7 @@
     "**/Thumbs.db": true,
     "**/node_modules": true,
     "**/.venv": true,
+    "**/.direnv": true,
     ".astro": true,
     "pnpm-lock.yaml": true,
     ".direnv": true,

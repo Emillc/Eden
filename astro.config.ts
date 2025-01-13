@@ -1,7 +1,7 @@
 import sitemap from '@astrojs/sitemap'
 import svelte from '@astrojs/svelte'
-import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
 import remarkCollapse from 'remark-collapse'
 import remarkEmoji from 'remark-emoji'
 import remarkToc from 'remark-toc'
@@ -18,7 +18,9 @@ export default defineConfig({
       injectReset: true,
     }),
     sitemap(),
-    svelte(),
+    svelte({
+      extensions: ['.svelte'],
+    }),
     icon(),
   ],
 

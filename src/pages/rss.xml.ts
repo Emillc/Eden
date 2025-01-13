@@ -13,7 +13,7 @@ export async function GET() {
     site,
     items: posts.map(post => ({
       ...post.data,
-      link: `/posts/${post.slug}/`,
+      link: `/posts/${post.id}/`,
     })),
   })
 }
