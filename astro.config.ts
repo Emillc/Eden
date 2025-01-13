@@ -1,6 +1,5 @@
 import sitemap from '@astrojs/sitemap'
 import svelte from '@astrojs/svelte'
-import icon from 'astro-icon'
 import { defineConfig } from 'astro/config'
 import remarkEmoji from 'remark-emoji'
 import { remarkAlert } from 'remark-github-blockquote-alert'
@@ -20,7 +19,6 @@ export default defineConfig({
     svelte({
       extensions: ['.svelte'],
     }),
-    icon(),
   ],
 
   markdown: {
