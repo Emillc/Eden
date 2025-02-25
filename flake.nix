@@ -31,9 +31,6 @@
           # Pinned packages available in the environment
           packages = with pkgs; [
             nodejs_22
-            nodePackages.pnpm
-            git
-            nixpkgs-fmt
           ];
         };
       });
