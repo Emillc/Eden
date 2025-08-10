@@ -24,8 +24,8 @@ importers:
         specifier: 5.0.1
         version: 5.0.1
       remark-github-blockquote-alert:
-        specifier: 1.3.1
-        version: 1.3.1
+        specifier: 2.0.0
+        version: 2.0.0
     devDependencies:
       '@antfu/eslint-config':
         specifier: 3.16.0
@@ -3120,6 +3120,7 @@ packages:
 
   fonteditor-core@2.6.1:
     resolution: {integrity: sha512-vKAEo5NutWVHsFz9MAs5qjUf/UZJQE/+8gB+riErvHPhanJ49vMmbNawg+fY2GtP9J3j57FRw7HXRz7f8rtWxQ==}
+    deprecated: deprecated
 
   fontkit@2.0.4:
     resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
@@ -3127,6 +3128,7 @@ packages:
   fontmin@2.0.2:
     resolution: {integrity: sha512-JZXEehAOUv1VnGpx/w4r7B/GQwgSNM/hIZ4t4MQJhWpjAEm3KKiKCy8j+rX4Xxbic+nEivPsQ5YbXn82O2XtdQ==}
     engines: {node: '>=16'}
+    deprecated: deprecated
     hasBin: true
 
   foreground-child@3.3.0:
@@ -4631,8 +4633,8 @@ packages:
   remark-gfm@4.0.1:
     resolution: {integrity: sha512-1quofZ2RQ9EWdeN34S79+KExV1764+wCUGop5CPL1WGdD0ocPpu91lzPGbwWMECpEpd42kJGQwzRfyov9j4yNg==}
 
-  remark-github-blockquote-alert@1.3.1:
-    resolution: {integrity: sha512-OPNnimcKeozWN1w8KVQEuHOxgN3L4rah8geMOLhA5vN9wITqU4FWD+G26tkEsCGHiOVDbISx+Se5rGZ+D1p0Jg==}
+  remark-github-blockquote-alert@2.0.0:
+    resolution: {integrity: sha512-n05GsATsJJUm9INz6E9bMcjMdJva0iTQXBOgFqm/DqDOlztxkqpwplVOAqt/6MV/FE7G/Wqskgkbq333CJU3kg==}
     engines: {node: '>=16'}
 
   remark-parse@11.0.0:
@@ -10945,7 +10947,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  remark-github-blockquote-alert@1.3.1:
+  remark-github-blockquote-alert@2.0.0:
     dependencies:
       unist-util-visit: 5.0.0
 
