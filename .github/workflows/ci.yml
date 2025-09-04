@@ -20,7 +20,7 @@ jobs:
             - recursive: true
               args: [--shamefully-hoist, --strict-peer-dependencies=false]
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: latest
           cache: pnpm
