@@ -6,9 +6,6 @@
 /* texture */
 @import './texture.css';
 
-/* font */
-@import './font.css';
-
 /* article */
 @import './article.css';
 
@@ -43,7 +40,6 @@ body {
 .subtext0 {
   color: var(--subtext0);
   opacity: 0.7;
-  @apply text-4;
 }
 
 /* scrollbar */
@@ -52,6 +48,5 @@ body {
 }
 
 hr {
-  @apply select-none;
   border-color: var(--lavender);
 }

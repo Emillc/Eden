@@ -14,7 +14,7 @@ tags:
 
 ![](https://img.chillcicada.com/i/2024/11/28/67488bbb249f4.png)
 
-灵感来源：[《看懂乔伊斯【都柏林人】老师再也不敢给你作文打分了》](https://www.bilibili.com/video/BV1vvBXY5EZn/?share_source=copy_web&vd_source=d000e43c12de15b06916c7329dbfd800)
+灵感来源：[《看懂乔伊斯【都柏林人】老师再也不敢给你作文打分了》](https://www.bilibili.com/video/BV1vvBXY5EZn)
 
 北京下了冬天的第一场雪，在前天。第二天，母亲给我发来了问候，上午雪已经消了，风也停了，我回复了她，她没有再回复我。
 
