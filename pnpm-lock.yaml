@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: 3.16.0
-        version: 3.16.0(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@unocss/eslint-plugin@65.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@vue/compiler-sfc@3.5.13)(astro-eslint-parser@1.1.0(typescript@5.9.3))(eslint-plugin-astro@1.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint-plugin-format@1.0.2(eslint@9.39.1(jiti@2.4.2)))(eslint-plugin-svelte@2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.4))(eslint@9.39.1(jiti@2.4.2))(svelte-eslint-parser@0.43.0(svelte@5.43.4))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))
+        version: 3.16.0(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@unocss/eslint-plugin@65.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@vue/compiler-sfc@3.5.13)(astro-eslint-parser@1.1.0(typescript@5.9.3))(eslint-plugin-astro@1.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint-plugin-format@1.0.2(eslint@9.39.1(jiti@2.4.2)))(eslint-plugin-svelte@2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.6))(eslint@9.39.1(jiti@2.4.2))(svelte-eslint-parser@0.43.0(svelte@5.43.6))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))
       '@astrojs/check':
         specifier: 0.9.5
         version: 0.9.5(prettier@3.6.2)(typescript@5.9.3)
@@ -41,10 +41,10 @@ importers:
         version: 3.6.0
       '@astrojs/svelte':
         specifier: 7.2.2
-        version: 7.2.2(@types/node@22.19.0)(astro@5.15.4(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(svelte@5.43.4)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)
+        version: 7.2.2(@types/node@22.19.1)(astro@5.15.7(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(svelte@5.43.6)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)
       '@commitlint/cli':
         specifier: 19.8.1
-        version: 19.8.1(@types/node@22.19.0)(typescript@5.9.3)
+        version: 19.8.1(@types/node@22.19.1)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: 19.8.1
         version: 19.8.1
@@ -55,8 +55,8 @@ importers:
         specifier: 4.0.6
         version: 4.0.6
       '@types/node':
-        specifier: 22.19.0
-        version: 22.19.0
+        specifier: 22.19.1
+        version: 22.19.1
       '@unocss/eslint-plugin':
         specifier: 65.5.0
         version: 65.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
@@ -64,14 +64,14 @@ importers:
         specifier: ^65.5.0
         version: 65.5.0
       astro:
-        specifier: 5.15.4
-        version: 5.15.4(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)
+        specifier: 5.15.7
+        version: 5.15.7(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)
       commitizen:
         specifier: 4.3.1
-        version: 4.3.1(@types/node@22.19.0)(typescript@5.9.3)
+        version: 4.3.1(@types/node@22.19.1)(typescript@5.9.3)
       cz-conventional-changelog:
         specifier: 3.3.0
-        version: 3.3.0(@types/node@22.19.0)(typescript@5.9.3)
+        version: 3.3.0(@types/node@22.19.1)(typescript@5.9.3)
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.4.2)
@@ -83,7 +83,7 @@ importers:
         version: 1.0.2(eslint@9.39.1(jiti@2.4.2))
       eslint-plugin-svelte:
         specifier: 2.46.1
-        version: 2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.4)
+        version: 2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.6)
       fontmin:
         specifier: 2.0.3
         version: 2.0.3
@@ -106,8 +106,8 @@ importers:
         specifier: 2.13.1
         version: 2.13.1
       svelte:
-        specifier: 5.43.4
-        version: 5.43.4
+        specifier: 5.43.6
+        version: 5.43.6
       terser:
         specifier: 5.44.1
         version: 5.44.1
@@ -116,13 +116,13 @@ importers:
         version: 5.9.3
       unocss:
         specifier: 65.5.0
-        version: 65.5.0(postcss@8.5.3)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
+        version: 65.5.0(postcss@8.5.3)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
       vite:
         specifier: 6.4.1
-        version: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+        version: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
       vitest:
         specifier: 2.1.9
-        version: 2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
+        version: 2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
 
 packages:
 
@@ -197,6 +197,9 @@ packages:
   '@astrojs/compiler@2.12.2':
     resolution: {integrity: sha512-w2zfvhjNCkNMmMMOn5b0J8+OmUaBL1o40ipMvqcG6NRpdC+lKxmTi48DT8Xw0SzJ3AfmeFLB45zXZXtmbsjcgw==}
 
+  '@astrojs/compiler@2.13.0':
+    resolution: {integrity: sha512-mqVORhUJViA28fwHYaWmsXSzLO9osbdZ5ImUfxBarqsYdMlPbqAqGJCxsNzvppp1BEzc1mJNjOVvQqeDN8Vspw==}
+
   '@astrojs/internal-helpers@0.7.4':
     resolution: {integrity: sha512-lDA9MqE8WGi7T/t2BMi+EAXhs4Vcvr94Gqx3q15cFEz8oFZMO4/SFBqYr/UcmNlvW+35alowkVj+w9VhLvs5Cw==}
 
@@ -248,8 +251,16 @@ packages:
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-string-parser@7.27.1':
+    resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.28.5':
+    resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
     engines: {node: '>=6.9.0'}
 
   '@babel/parser@7.26.5':
@@ -257,8 +268,17 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
+  '@babel/parser@7.28.5':
+    resolution: {integrity: sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
   '@babel/types@7.26.5':
     resolution: {integrity: sha512-L6mZmwFDK6Cjh1nRCLXpa6no13ZIioJDz7mdkzHv399pThrTa/k0nUlNaenOeh2kWu/iaOQYElEpKPUswUa9Vg==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/types@7.28.5':
+    resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
     engines: {node: '>=6.9.0'}
 
   '@capsizecss/unpack@3.0.0':
@@ -1616,23 +1636,23 @@ packages:
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
 
-  '@shikijs/core@3.14.0':
-    resolution: {integrity: sha512-qRSeuP5vlYHCNUIrpEBQFO7vSkR7jn7Kv+5X3FO/zBKVDGQbcnlScD3XhkrHi/R8Ltz0kEjvFR9Szp/XMRbFMw==}
+  '@shikijs/core@3.15.0':
+    resolution: {integrity: sha512-8TOG6yG557q+fMsSVa8nkEDOZNTSxjbbR8l6lF2gyr6Np+jrPlslqDxQkN6rMXCECQ3isNPZAGszAfYoJOPGlg==}
 
-  '@shikijs/engine-javascript@3.14.0':
-    resolution: {integrity: sha512-3v1kAXI2TsWQuwv86cREH/+FK9Pjw3dorVEykzQDhwrZj0lwsHYlfyARaKmn6vr5Gasf8aeVpb8JkzeWspxOLQ==}
+  '@shikijs/engine-javascript@3.15.0':
+    resolution: {integrity: sha512-ZedbOFpopibdLmvTz2sJPJgns8Xvyabe2QbmqMTz07kt1pTzfEvKZc5IqPVO/XFiEbbNyaOpjPBkkr1vlwS+qg==}
 
-  '@shikijs/engine-oniguruma@3.14.0':
-    resolution: {integrity: sha512-TNcYTYMbJyy+ZjzWtt0bG5y4YyMIWC2nyePz+CFMWqm+HnZZyy9SWMgo8Z6KBJVIZnx8XUXS8U2afO6Y0g1Oug==}
+  '@shikijs/engine-oniguruma@3.15.0':
+    resolution: {integrity: sha512-HnqFsV11skAHvOArMZdLBZZApRSYS4LSztk2K3016Y9VCyZISnlYUYsL2hzlS7tPqKHvNqmI5JSUJZprXloMvA==}
 
-  '@shikijs/langs@3.14.0':
-    resolution: {integrity: sha512-DIB2EQY7yPX1/ZH7lMcwrK5pl+ZkP/xoSpUzg9YC8R+evRCCiSQ7yyrvEyBsMnfZq4eBzLzBlugMyTAf13+pzg==}
+  '@shikijs/langs@3.15.0':
+    resolution: {integrity: sha512-WpRvEFvkVvO65uKYW4Rzxs+IG0gToyM8SARQMtGGsH4GDMNZrr60qdggXrFOsdfOVssG/QQGEl3FnJ3EZ+8w8A==}
 
-  '@shikijs/themes@3.14.0':
-    resolution: {integrity: sha512-fAo/OnfWckNmv4uBoUu6dSlkcBc+SA1xzj5oUSaz5z3KqHtEbUypg/9xxgJARtM6+7RVm0Q6Xnty41xA1ma1IA==}
+  '@shikijs/themes@3.15.0':
+    resolution: {integrity: sha512-8ow2zWb1IDvCKjYb0KiLNrK4offFdkfNVPXb1OZykpLCzRU6j+efkY+Y7VQjNlNFXonSw+4AOdGYtmqykDbRiQ==}
 
-  '@shikijs/types@3.14.0':
-    resolution: {integrity: sha512-bQGgC6vrY8U/9ObG1Z/vTro+uclbjjD/uG58RvfxKZVD5p9Yc1ka3tVyEFy7BNJLzxuWyHH5NWynP9zZZS59eQ==}
+  '@shikijs/types@3.15.0':
+    resolution: {integrity: sha512-BnP+y/EQnhihgHy4oIAN+6FFtmfTekwOLsQbRw9hOKwqgNy8Bdsjq8B05oAt/ZgvIWWFrshV71ytOrlPfYjIJw==}
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
@@ -1801,8 +1821,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@22.19.0':
-    resolution: {integrity: sha512-xpr/lmLPQEj+TUnHmR+Ab91/glhJvsqcjB+yY0Ix9GO70H6Lb4FHH5GeqdOE5btAx7eIMwuHkp4H2MSkLcqWbA==}
+  '@types/node@22.19.1':
+    resolution: {integrity: sha512-LCCV0HdSZZZb34qifBsyWlUmok6W7ouER+oQIGBScS8EsZsQbrtFTUrDX4hOl+CS6p7cnNC4td+qrSVGSCTUfQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2209,8 +2229,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@5.15.4:
-    resolution: {integrity: sha512-0g/68hLHEJZF2nYUcZM5O0kOnzCsCIf8eA9+0jfBAxp4ycujrIHRgIOdZCFKL9GoTsn8AypWbziypH5aEIF+aA==}
+  astro@5.15.7:
+    resolution: {integrity: sha512-Zmw6otInhxcjoGcEyEN+wxgdiQERQOS3VzOmAKsDdKK8Fb4x1656r+9NtaTXCRZ0/fGtHjkSvkGUhZUJLXKfxQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2406,6 +2426,10 @@ packages:
 
   ci-info@4.3.0:
     resolution: {integrity: sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ==}
+    engines: {node: '>=8'}
+
+  ci-info@4.3.1:
+    resolution: {integrity: sha512-Wdy2Igu8OcBpI2pZePZ5oWjPC38tmDVx5WKUXKwlLYkA0ozo85sLsLvkBbBn/sZaSCMFOGZJ14fvW9t5/d7kdA==}
     engines: {node: '>=8'}
 
   clean-css@4.2.4:
@@ -2671,6 +2695,15 @@ packages:
 
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.3:
+    resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -3252,8 +3285,8 @@ packages:
       debug:
         optional: true
 
-  fontace@0.3.0:
-    resolution: {integrity: sha512-czoqATrcnxgWb/nAkfyIrRp6Q8biYj7nGnL6zfhTcX+JKKpWHFBnb8uNMw/kZr7u++3Y3wYSYoZgHkCcsuBpBg==}
+  fontace@0.3.1:
+    resolution: {integrity: sha512-9f5g4feWT1jWT8+SbL85aLIRLIXUaDygaM2xPXRmzPYxrOMNok79Lr3FGJoKVNKibE0WCunNiEVG2mwuE+2qEg==}
 
   fonteditor-core@2.6.2:
     resolution: {integrity: sha512-rt4znDyyzIWVNe7lOc+AxBha9ie7XSLf9c7OCWLYBoAHOBKPCsI9rXt6Z9rfAaOX882dSDc3x8+1mfcNxQklYw==}
@@ -3997,8 +4030,11 @@ packages:
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
-  magicast@0.3.5:
-    resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
+  magic-string@0.30.21:
+    resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
+  magicast@0.5.1:
+    resolution: {integrity: sha512-xrHS24IxaLrvuo613F719wvOIv9xPHFWQHuvGUBmPnCA/3MQxKI3b+r7n1jAoDHmsbC5bRhTZYR77invLAxVnw==}
 
   make-fetch-happen@13.0.1:
     resolution: {integrity: sha512-cKTUFc/rbKUd/9meOvgrpJ2WrNzymt6jfRDdwg5UCnVzv9dTpEj9JS5m3wtziXVCjluIXyL8pcaukYqezIzZQA==}
@@ -4347,6 +4383,9 @@ packages:
   ofetch@1.4.1:
     resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
 
+  ofetch@1.5.1:
+    resolution: {integrity: sha512-2W4oUZlVaqAPAil6FUg/difl6YhqhUR7x2eZY4bQCko22UXg3hptq9KLQdqFClV+Wu85UX7hNtdGTngi/1BxcA==}
+
   ohash@2.0.11:
     resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
 
@@ -4419,8 +4458,8 @@ packages:
     resolution: {integrity: sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==}
     engines: {node: '>=10'}
 
-  p-queue@8.1.0:
-    resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
+  p-queue@8.1.1:
+    resolution: {integrity: sha512-aNZ+VfjobsWryoiPnEApGGmf5WmNsCo9xu8dfaYamG5qaLP7ClhLN6NgsFe6SwJ2UbLEBK5dv9x8Mn5+RVhMWQ==}
     engines: {node: '>=18'}
 
   p-timeout@6.1.4:
@@ -4437,8 +4476,8 @@ packages:
   package-manager-detector@0.2.8:
     resolution: {integrity: sha512-ts9KSdroZisdvKMWVAVCXiKqnqNfXz4+IbrBG8/BWx/TR5le+jfenvoBuIZ6UWM9nz47W7AbD9qYfAwfWMIwzA==}
 
-  package-manager-detector@1.3.0:
-    resolution: {integrity: sha512-ZsEbbZORsyHuO00lY1kV3/t72yp6Ysay6Pd17ZAlNGuGwmWDLCJxFpRs0IzfXfj1o4icJOkUEioexFHzyPurSQ==}
+  package-manager-detector@1.5.0:
+    resolution: {integrity: sha512-uBj69dVlYe/+wxj8JOpr97XfsxH/eumMt6HqjNTmJDf/6NO9s+0uxeOneIz3AsPt2m6y9PqzDzd3ATcU17MNfw==}
 
   pako@0.2.9:
     resolution: {integrity: sha512-NUcwaKxUxWrZLpDG+z/xZaCgQITkA/Dv4V/T6bw7VON6l1Xz/VnrBqrYjZQ12TamKHzITTfOEIYUj48y2KXImA==}
@@ -4948,6 +4987,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   sharp@0.33.5:
     resolution: {integrity: sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -4964,8 +5008,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shiki@3.14.0:
-    resolution: {integrity: sha512-J0yvpLI7LSig3Z3acIuDLouV5UCKQqu8qOArwMx+/yPVC3WRMgrP67beaG8F+j4xfEWE0eVC4GeBCIXeOPra1g==}
+  shiki@3.15.0:
+    resolution: {integrity: sha512-kLdkY6iV3dYbtPwS9KXU7mjfmDm25f5m0IPNFnaXO7TBPcvbUOY72PYXSuSqDzwp+vlH/d7MXpHlKO/x+QoLXw==}
 
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
@@ -5191,8 +5235,8 @@ packages:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
 
-  svelte@5.43.4:
-    resolution: {integrity: sha512-tPNp21nDWB0PSHE+VrTvEy9cFtDp2Q+ATxQoFomISEVdikZ1QZ69UqBPz/LlT+Oc8/LYS/COYwDQZrmZEUr+JQ==}
+  svelte@5.43.6:
+    resolution: {integrity: sha512-RnyO9VXI85Bmsf4b8AuQFBKFYL3LKUl+ZrifOjvlrQoboAROj5IITVLK1yOXBjwUWUn2BI5cfmurktgCzuZ5QA==}
     engines: {node: '>=18'}
 
   svgo@3.3.2:
@@ -5260,6 +5304,10 @@ packages:
 
   tinyexec@1.0.1:
     resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
+
+  tinyexec@1.0.2:
+    resolution: {integrity: sha512-W/KYk+NFhkmsYpuHq5JykngiOCnxeVL8v8dFnqxSD8qEEdRfXk1SDM6JzNqcERbcGYj9tMrDQBYV9cjgnunFIg==}
+    engines: {node: '>=18'}
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
@@ -5490,8 +5538,8 @@ packages:
     resolution: {integrity: sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA==}
     engines: {node: '>=18.12.0'}
 
-  unstorage@1.17.1:
-    resolution: {integrity: sha512-KKGwRTT0iVBCErKemkJCLs7JdxNVfqTPc/85ae1XES0+bsHbc/sFBfVi5kJp156cc51BHinIH2l3k0EZ24vOBQ==}
+  unstorage@1.17.2:
+    resolution: {integrity: sha512-cKEsD6iBWJgOMJ6vW1ID/SYuqNf8oN4yqRk8OYqaVQ3nnkJXOT1PSpaMh2QfzLs78UN5kSNRD2c/mgjT8tX7+w==}
     peerDependencies:
       '@azure/app-configuration': ^1.8.0
       '@azure/cosmos': ^4.2.0
@@ -6002,7 +6050,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@3.16.0(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@unocss/eslint-plugin@65.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@vue/compiler-sfc@3.5.13)(astro-eslint-parser@1.1.0(typescript@5.9.3))(eslint-plugin-astro@1.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint-plugin-format@1.0.2(eslint@9.39.1(jiti@2.4.2)))(eslint-plugin-svelte@2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.4))(eslint@9.39.1(jiti@2.4.2))(svelte-eslint-parser@0.43.0(svelte@5.43.4))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))':
+  '@antfu/eslint-config@3.16.0(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@unocss/eslint-plugin@65.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(@vue/compiler-sfc@3.5.13)(astro-eslint-parser@1.1.0(typescript@5.9.3))(eslint-plugin-astro@1.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint-plugin-format@1.0.2(eslint@9.39.1(jiti@2.4.2)))(eslint-plugin-svelte@2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.6))(eslint@9.39.1(jiti@2.4.2))(svelte-eslint-parser@0.43.0(svelte@5.43.6))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))':
     dependencies:
       '@antfu/install-pkg': 1.0.0
       '@clack/prompts': 0.9.1
@@ -6011,7 +6059,7 @@ snapshots:
       '@stylistic/eslint-plugin': 2.13.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin': 8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
       '@typescript-eslint/parser': 8.21.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
-      '@vitest/eslint-plugin': 1.1.25(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))
+      '@vitest/eslint-plugin': 1.1.25(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))
       eslint: 9.39.1(jiti@2.4.2)
       eslint-config-flat-gitignore: 1.0.0(eslint@9.39.1(jiti@2.4.2))
       eslint-flat-config-utils: 1.1.0
@@ -6045,8 +6093,8 @@ snapshots:
       astro-eslint-parser: 1.1.0(typescript@5.9.3)
       eslint-plugin-astro: 1.5.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
       eslint-plugin-format: 1.0.2(eslint@9.39.1(jiti@2.4.2))
-      eslint-plugin-svelte: 2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.4)
-      svelte-eslint-parser: 0.43.0(svelte@5.43.4)
+      eslint-plugin-svelte: 2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.6)
+      svelte-eslint-parser: 0.43.0(svelte@5.43.6)
     transitivePeerDependencies:
       - '@eslint/json'
       - '@typescript-eslint/utils'
@@ -6081,6 +6129,8 @@ snapshots:
       - prettier-plugin-astro
 
   '@astrojs/compiler@2.12.2': {}
+
+  '@astrojs/compiler@2.13.0': {}
 
   '@astrojs/internal-helpers@0.7.4': {}
 
@@ -6125,7 +6175,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.2
       remark-smartypants: 3.0.2
-      shiki: 3.14.0
+      shiki: 3.15.0
       smol-toml: 1.4.2
       unified: 11.0.5
       unist-util-remove-position: 5.0.0
@@ -6150,14 +6200,14 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/svelte@7.2.2(@types/node@22.19.0)(astro@5.15.4(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(svelte@5.43.4)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)':
+  '@astrojs/svelte@7.2.2(@types/node@22.19.1)(astro@5.15.7(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(svelte@5.43.6)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
-      astro: 5.15.4(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)
-      svelte: 5.43.4
-      svelte2tsx: 0.7.42(svelte@5.43.4)(typescript@5.9.3)
+      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
+      astro: 5.15.7(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0)
+      svelte: 5.43.6
+      svelte2tsx: 0.7.42(svelte@5.43.6)(typescript@5.9.3)
       typescript: 5.9.3
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -6174,8 +6224,8 @@ snapshots:
 
   '@astrojs/telemetry@3.3.0':
     dependencies:
-      ci-info: 4.3.0
-      debug: 4.4.1
+      ci-info: 4.3.1
+      debug: 4.4.3
       dlv: 1.1.3
       dset: 3.1.4
       is-docker: 3.0.0
@@ -6196,16 +6246,29 @@ snapshots:
 
   '@babel/helper-string-parser@7.25.9': {}
 
+  '@babel/helper-string-parser@7.27.1': {}
+
   '@babel/helper-validator-identifier@7.25.9': {}
+
+  '@babel/helper-validator-identifier@7.28.5': {}
 
   '@babel/parser@7.26.5':
     dependencies:
       '@babel/types': 7.26.5
 
+  '@babel/parser@7.28.5':
+    dependencies:
+      '@babel/types': 7.28.5
+
   '@babel/types@7.26.5':
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@babel/types@7.28.5':
+    dependencies:
+      '@babel/helper-string-parser': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
 
   '@capsizecss/unpack@3.0.0':
     dependencies:
@@ -6226,11 +6289,11 @@ snapshots:
     dependencies:
       commander: 12.1.0
 
-  '@commitlint/cli@19.8.1(@types/node@22.19.0)(typescript@5.9.3)':
+  '@commitlint/cli@19.8.1(@types/node@22.19.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 19.8.1
       '@commitlint/lint': 19.8.1
-      '@commitlint/load': 19.8.1(@types/node@22.19.0)(typescript@5.9.3)
+      '@commitlint/load': 19.8.1(@types/node@22.19.1)(typescript@5.9.3)
       '@commitlint/read': 19.8.1
       '@commitlint/types': 19.8.1
       tinyexec: 1.0.1
@@ -6292,7 +6355,7 @@ snapshots:
       '@commitlint/rules': 19.8.1
       '@commitlint/types': 19.8.1
 
-  '@commitlint/load@19.6.1(@types/node@22.19.0)(typescript@5.9.3)':
+  '@commitlint/load@19.6.1(@types/node@22.19.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 19.5.0
       '@commitlint/execute-rule': 19.5.0
@@ -6300,7 +6363,7 @@ snapshots:
       '@commitlint/types': 19.8.0
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.19.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.19.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -6309,7 +6372,7 @@ snapshots:
       - typescript
     optional: true
 
-  '@commitlint/load@19.8.1(@types/node@22.19.0)(typescript@5.9.3)':
+  '@commitlint/load@19.8.1(@types/node@22.19.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 19.8.1
       '@commitlint/execute-rule': 19.8.1
@@ -6317,7 +6380,7 @@ snapshots:
       '@commitlint/types': 19.8.1
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.19.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.19.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -7287,33 +7350,33 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@shikijs/core@3.14.0':
+  '@shikijs/core@3.15.0':
     dependencies:
-      '@shikijs/types': 3.14.0
+      '@shikijs/types': 3.15.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.5
 
-  '@shikijs/engine-javascript@3.14.0':
+  '@shikijs/engine-javascript@3.15.0':
     dependencies:
-      '@shikijs/types': 3.14.0
+      '@shikijs/types': 3.15.0
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.3
 
-  '@shikijs/engine-oniguruma@3.14.0':
+  '@shikijs/engine-oniguruma@3.15.0':
     dependencies:
-      '@shikijs/types': 3.14.0
+      '@shikijs/types': 3.15.0
       '@shikijs/vscode-textmate': 10.0.2
 
-  '@shikijs/langs@3.14.0':
+  '@shikijs/langs@3.15.0':
     dependencies:
-      '@shikijs/types': 3.14.0
+      '@shikijs/types': 3.15.0
 
-  '@shikijs/themes@3.14.0':
+  '@shikijs/themes@3.15.0':
     dependencies:
-      '@shikijs/types': 3.14.0
+      '@shikijs/types': 3.15.0
 
-  '@shikijs/types@3.14.0':
+  '@shikijs/types@3.15.0':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
@@ -7340,25 +7403,25 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)))(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))':
+  '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)))(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
+      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
       debug: 4.4.1
-      svelte: 5.43.4
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      svelte: 5.43.6
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))':
+  '@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)))(svelte@5.43.4)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
+      '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)))(svelte@5.43.6)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
       debug: 4.4.1
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.19
-      svelte: 5.43.4
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
+      svelte: 5.43.6
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vitefu: 1.1.1(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
@@ -7425,12 +7488,12 @@ snapshots:
 
   '@types/clean-css@4.2.11':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
       source-map: 0.6.1
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
 
   '@types/debug@4.1.12':
     dependencies:
@@ -7449,7 +7512,7 @@ snapshots:
 
   '@types/fontkit@2.0.8':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
 
   '@types/hast@3.0.4':
     dependencies:
@@ -7475,7 +7538,7 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@22.19.0':
+  '@types/node@22.19.1':
     dependencies:
       undici-types: 6.21.0
 
@@ -7485,16 +7548,16 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
       minipass: 4.2.8
 
   '@types/through2@2.0.41':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
 
   '@types/uglify-js@3.17.5':
     dependencies:
@@ -7504,7 +7567,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)':
@@ -7635,13 +7698,13 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@unocss/astro@65.5.0(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))':
+  '@unocss/astro@65.5.0(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))':
     dependencies:
       '@unocss/core': 65.5.0
       '@unocss/reset': 65.5.0
-      '@unocss/vite': 65.5.0(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
+      '@unocss/vite': 65.5.0(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
     optionalDependencies:
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - vue
 
@@ -7776,7 +7839,7 @@ snapshots:
     dependencies:
       '@unocss/core': 65.5.0
 
-  '@unocss/vite@65.5.0(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))':
+  '@unocss/vite@65.5.0(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@unocss/config': 65.5.0
@@ -7786,17 +7849,17 @@ snapshots:
       magic-string: 0.30.19
       tinyglobby: 0.2.15
       unplugin-utils: 0.2.4
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - vue
 
-  '@vitest/eslint-plugin@1.1.25(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))':
+  '@vitest/eslint-plugin@1.1.25(@typescript-eslint/utils@8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3))(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)(vitest@2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))':
     dependencies:
       '@typescript-eslint/utils': 8.24.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
       eslint: 9.39.1(jiti@2.4.2)
     optionalDependencies:
       typescript: 5.9.3
-      vitest: 2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
+      vitest: 2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
 
   '@vitest/expect@2.1.9':
     dependencies:
@@ -7805,13 +7868,13 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.9(vite@5.4.11(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))':
+  '@vitest/mocker@2.1.9(vite@5.4.11(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.19
     optionalDependencies:
-      vite: 5.4.11(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
+      vite: 5.4.11(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
 
   '@vitest/pretty-format@2.1.9':
     dependencies:
@@ -8057,9 +8120,9 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.15.4(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0):
+  astro@5.15.7(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(rollup@4.40.0)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.0):
     dependencies:
-      '@astrojs/compiler': 2.12.2
+      '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.4
       '@astrojs/markdown-remark': 6.3.8
       '@astrojs/telemetry': 3.3.0
@@ -8070,12 +8133,12 @@ snapshots:
       aria-query: 5.3.2
       axobject-query: 4.1.0
       boxen: 8.0.1
-      ci-info: 4.3.0
+      ci-info: 4.3.1
       clsx: 2.1.1
       common-ancestor-path: 1.0.1
       cookie: 1.0.2
       cssesc: 3.0.0
-      debug: 4.4.1
+      debug: 4.4.3
       deterministic-object-hash: 2.0.2
       devalue: 5.4.2
       diff: 5.2.0
@@ -8085,36 +8148,36 @@ snapshots:
       esbuild: 0.25.0
       estree-walker: 3.0.3
       flattie: 1.1.1
-      fontace: 0.3.0
+      fontace: 0.3.1
       github-slugger: 2.0.0
       html-escaper: 3.0.3
       http-cache-semantics: 4.2.0
       import-meta-resolve: 4.2.0
       js-yaml: 4.1.0
-      magic-string: 0.30.19
-      magicast: 0.3.5
+      magic-string: 0.30.21
+      magicast: 0.5.1
       mrmime: 2.0.1
       neotraverse: 0.6.18
       p-limit: 6.2.0
-      p-queue: 8.1.0
-      package-manager-detector: 1.3.0
+      p-queue: 8.1.1
+      package-manager-detector: 1.5.0
       picocolors: 1.1.1
       picomatch: 4.0.3
       prompts: 2.4.2
       rehype: 13.0.2
-      semver: 7.7.2
-      shiki: 3.14.0
+      semver: 7.7.3
+      shiki: 3.15.0
       smol-toml: 1.4.2
-      tinyexec: 1.0.1
+      tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tsconfck: 3.1.6(typescript@5.9.3)
       ultrahtml: 1.6.0
       unifont: 0.6.0
       unist-util-visit: 5.0.0
-      unstorage: 1.17.1
+      unstorage: 1.17.2
       vfile: 6.0.3
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vitefu: 1.1.1(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -8388,6 +8451,8 @@ snapshots:
 
   ci-info@4.3.0: {}
 
+  ci-info@4.3.1: {}
+
   clean-css@4.2.4:
     dependencies:
       source-map: 0.6.1
@@ -8485,10 +8550,10 @@ snapshots:
 
   comment-parser@1.4.1: {}
 
-  commitizen@4.3.1(@types/node@22.19.0)(typescript@5.9.3):
+  commitizen@4.3.1(@types/node@22.19.1)(typescript@5.9.3):
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@22.19.0)(typescript@5.9.3)
+      cz-conventional-changelog: 3.3.0(@types/node@22.19.1)(typescript@5.9.3)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -8554,9 +8619,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@22.19.0)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@22.19.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.4.2
       typescript: 5.9.3
@@ -8623,16 +8688,16 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  cz-conventional-changelog@3.3.0(@types/node@22.19.0)(typescript@5.9.3):
+  cz-conventional-changelog@3.3.0(@types/node@22.19.1)(typescript@5.9.3):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.1(@types/node@22.19.0)(typescript@5.9.3)
+      commitizen: 4.3.1(@types/node@22.19.1)(typescript@5.9.3)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.6.1(@types/node@22.19.0)(typescript@5.9.3)
+      '@commitlint/load': 19.6.1(@types/node@22.19.1)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -8648,6 +8713,10 @@ snapshots:
       ms: 2.1.3
 
   debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.3:
     dependencies:
       ms: 2.1.3
 
@@ -9087,7 +9156,7 @@ snapshots:
       regexp-ast-analysis: 0.7.1
       scslre: 0.3.0
 
-  eslint-plugin-svelte@2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.4):
+  eslint-plugin-svelte@2.46.1(eslint@9.39.1(jiti@2.4.2))(svelte@5.43.6):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.39.1(jiti@2.4.2))
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -9100,9 +9169,9 @@ snapshots:
       postcss-safe-parser: 6.0.0(postcss@8.4.49)
       postcss-selector-parser: 6.1.2
       semver: 7.6.3
-      svelte-eslint-parser: 0.43.0(svelte@5.43.4)
+      svelte-eslint-parser: 0.43.0(svelte@5.43.6)
     optionalDependencies:
-      svelte: 5.43.4
+      svelte: 5.43.6
     transitivePeerDependencies:
       - ts-node
 
@@ -9409,7 +9478,7 @@ snapshots:
 
   follow-redirects@1.15.9: {}
 
-  fontace@0.3.0:
+  fontace@0.3.1:
     dependencies:
       '@types/fontkit': 2.0.8
       fontkit: 2.0.4
@@ -9432,7 +9501,7 @@ snapshots:
 
   fontmin@2.0.3:
     dependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
       '@types/through2': 2.0.41
       b3b: 0.0.1
       buffer-to-vinyl: 1.1.0
@@ -10211,10 +10280,14 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  magicast@0.3.5:
+  magic-string@0.30.21:
     dependencies:
-      '@babel/parser': 7.26.5
-      '@babel/types': 7.26.5
+      '@jridgewell/sourcemap-codec': 1.5.5
+
+  magicast@0.5.1:
+    dependencies:
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
       source-map-js: 1.2.1
 
   make-fetch-happen@13.0.1:
@@ -10742,6 +10815,12 @@ snapshots:
       node-fetch-native: 1.6.7
       ufo: 1.6.1
 
+  ofetch@1.5.1:
+    dependencies:
+      destr: 2.0.5
+      node-fetch-native: 1.6.7
+      ufo: 1.6.1
+
   ohash@2.0.11: {}
 
   once@1.4.0:
@@ -10835,7 +10914,7 @@ snapshots:
     dependencies:
       aggregate-error: 3.1.0
 
-  p-queue@8.1.0:
+  p-queue@8.1.1:
     dependencies:
       eventemitter3: 5.0.1
       p-timeout: 6.1.4
@@ -10848,7 +10927,7 @@ snapshots:
 
   package-manager-detector@0.2.8: {}
 
-  package-manager-detector@1.3.0: {}
+  package-manager-detector@1.5.0: {}
 
   pako@0.2.9: {}
 
@@ -11406,6 +11485,8 @@ snapshots:
 
   semver@7.7.2: {}
 
+  semver@7.7.3: {}
+
   sharp@0.33.5:
     dependencies:
       color: 4.2.3
@@ -11436,7 +11517,7 @@ snapshots:
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.4
-      semver: 7.7.2
+      semver: 7.7.3
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.34.3
       '@img/sharp-darwin-x64': 0.34.3
@@ -11468,14 +11549,14 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shiki@3.14.0:
+  shiki@3.15.0:
     dependencies:
-      '@shikijs/core': 3.14.0
-      '@shikijs/engine-javascript': 3.14.0
-      '@shikijs/engine-oniguruma': 3.14.0
-      '@shikijs/langs': 3.14.0
-      '@shikijs/themes': 3.14.0
-      '@shikijs/types': 3.14.0
+      '@shikijs/core': 3.15.0
+      '@shikijs/engine-javascript': 3.15.0
+      '@shikijs/engine-oniguruma': 3.15.0
+      '@shikijs/langs': 3.15.0
+      '@shikijs/themes': 3.15.0
+      '@shikijs/types': 3.15.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
 
@@ -11684,7 +11765,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-eslint-parser@0.43.0(svelte@5.43.4):
+  svelte-eslint-parser@0.43.0(svelte@5.43.6):
     dependencies:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
@@ -11692,16 +11773,16 @@ snapshots:
       postcss: 8.4.49
       postcss-scss: 4.0.9(postcss@8.4.49)
     optionalDependencies:
-      svelte: 5.43.4
+      svelte: 5.43.6
 
-  svelte2tsx@0.7.42(svelte@5.43.4)(typescript@5.9.3):
+  svelte2tsx@0.7.42(svelte@5.43.6)(typescript@5.9.3):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
-      svelte: 5.43.4
+      svelte: 5.43.6
       typescript: 5.9.3
 
-  svelte@5.43.4:
+  svelte@5.43.6:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -11793,6 +11874,8 @@ snapshots:
   tinyexec@0.3.2: {}
 
   tinyexec@1.0.1: {}
+
+  tinyexec@1.0.2: {}
 
   tinyglobby@0.2.15:
     dependencies:
@@ -11995,9 +12078,9 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss@65.5.0(postcss@8.5.3)(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3)):
+  unocss@65.5.0(postcss@8.5.3)(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3)):
     dependencies:
-      '@unocss/astro': 65.5.0(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
+      '@unocss/astro': 65.5.0(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
       '@unocss/cli': 65.5.0
       '@unocss/core': 65.5.0
       '@unocss/postcss': 65.5.0(postcss@8.5.3)
@@ -12013,9 +12096,9 @@ snapshots:
       '@unocss/transformer-compile-class': 65.5.0
       '@unocss/transformer-directives': 65.5.0
       '@unocss/transformer-variant-group': 65.5.0
-      '@unocss/vite': 65.5.0(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
+      '@unocss/vite': 65.5.0(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.9.3))
     optionalDependencies:
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -12028,7 +12111,7 @@ snapshots:
       pathe: 2.0.2
       picomatch: 4.0.3
 
-  unstorage@1.17.1:
+  unstorage@1.17.2:
     dependencies:
       anymatch: 3.1.3
       chokidar: 4.0.3
@@ -12036,7 +12119,7 @@ snapshots:
       h3: 1.15.4
       lru-cache: 10.4.3
       node-fetch-native: 1.6.7
-      ofetch: 1.4.1
+      ofetch: 1.5.1
       ufo: 1.6.1
 
   update-browserslist-db@1.1.2(browserslist@4.24.4):
@@ -12122,13 +12205,13 @@ snapshots:
       replace-ext: 2.0.0
       teex: 1.0.1
 
-  vite-node@2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1):
+  vite-node@2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 1.1.2
-      vite: 5.4.11(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
+      vite: 5.4.11(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -12140,19 +12223,19 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.4.11(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1):
+  vite@5.4.11(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.3
       rollup: 4.30.1
     optionalDependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
       fsevents: 2.3.3
       lightningcss: 1.30.2
       sass: 1.77.8
       terser: 5.44.1
 
-  vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0):
+  vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -12161,7 +12244,7 @@ snapshots:
       rollup: 4.40.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
       fsevents: 2.3.3
       jiti: 2.4.2
       lightningcss: 1.30.2
@@ -12170,14 +12253,14 @@ snapshots:
       tsx: 4.19.2
       yaml: 2.7.0
 
-  vitefu@1.1.1(vite@6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)):
+  vitefu@1.1.1(vite@6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)):
     optionalDependencies:
-      vite: 6.4.1(@types/node@22.19.0)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.4.1(@types/node@22.19.1)(jiti@2.4.2)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)(tsx@4.19.2)(yaml@2.7.0)
 
-  vitest@2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1):
+  vitest@2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(vite@5.4.11(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))
+      '@vitest/mocker': 2.1.9(vite@5.4.11(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -12193,11 +12276,11 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.0.2
       tinyrainbow: 1.2.0
-      vite: 5.4.11(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
-      vite-node: 2.1.9(@types/node@22.19.0)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
+      vite: 5.4.11(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
+      vite-node: 2.1.9(@types/node@22.19.1)(lightningcss@1.30.2)(sass@1.77.8)(terser@5.44.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 22.19.0
+      '@types/node': 22.19.1
     transitivePeerDependencies:
       - less
       - lightningcss
